@@ -1,0 +1,1 @@
+![Interface options](https://raw.githubusercontent.com/pr3y/Bruce/main/media/pic3.png)
