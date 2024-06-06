@@ -4,6 +4,8 @@
 - CC1101 using the I2C module from m5stack
 
 ## Features
-- [ ] Scan/Copy (New)
+- [ ] Scan/Copy
 - [ ] Replay
-- [x] Spectrum (New)
+- [x] Spectrum
+- [x] Jammer Full (New) - @incursiohack
+- [x] Jammer Intermittent (New) - @incursiohack
