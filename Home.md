@@ -1,4 +1,4 @@
-![Bruce](https://raw.githubusercontent.com/pr3y/bruce_old/main/media/pic4.png)
+![Bruce](https://raw.githubusercontent.com/pr3y/Bruce/main/media/bruce_banner.png)
 
 Welcome to the Bruce wiki!
 
