@@ -5,6 +5,7 @@
   * [VS Code](https://github.com/pr3y/Bruce/wiki/Building-from-source#vs-code)
   * [Github](https://github.com/pr3y/Bruce/wiki/Building-from-source#github)
 * [Interface](https://github.com/pr3y/Bruce/wiki/Interface)
+* [config.conf](https://github.com/pr3y/Bruce/wiki/config.conf)
 * [BLE](https://github.com/pr3y/Bruce/wiki/BLE)
   * [AppleJuice](https://github.com/pr3y/Bruce/wiki/BLE#applejuice)
   * [SwiftPair](https://github.com/pr3y/Bruce/wiki/BLE#swiftpair)
