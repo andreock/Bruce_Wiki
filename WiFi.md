@@ -25,6 +25,7 @@ In EVIL Portal mode, BRUCE reads the keyboard input for the SSID and activates a
 * If your device has an SD Card reader with a FAT filesystem formatted card inserted, the usernames and passwords will be logged to Bruce_creds.csv on the SD Card for you to peruse later. 
 * SD Card support is only enabled by default on the M5Stack Cardputer platform. It can be enabled on M5Stick devices but an SD Card reader must be built and attached to the front panel pin header.
 New features, SPIFFS and SDCard
+* For examples of portals you can check https://github.com/pr3y/Bruce/tree/main/sd_files
 
 ## Scan Hosts
 Does a ping sweep on current network based on the mask (equivalent to nmap -sn flag), after that it will list every host online, then you can select some host to have a TCP port scan on selected ports (20, 21, 22, 23, 25, 80, 137, 139, 443, 3389, 8080, 8443, 9090), as seen in "ports" variable on scan_hosts.cpp 
