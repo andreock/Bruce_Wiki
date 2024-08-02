@@ -9,4 +9,10 @@ talk with Bruce with
 say My name is Bruce
 ```
 
+sleep
+```
+power sleep
+```
+
+
 
