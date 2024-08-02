@@ -4,6 +4,7 @@
 * [Building From Source](https://github.com/pr3y/Bruce/wiki/Building-from-source)
   * [VS Code](https://github.com/pr3y/Bruce/wiki/Building-from-source#vs-code)
   * [Github](https://github.com/pr3y/Bruce/wiki/Building-from-source#github)
+* [Installing](https://github.com/pr3y/Bruce/wiki/Installing)
 * [Interface](https://github.com/pr3y/Bruce/wiki/Interface)
 * [config.conf](https://github.com/pr3y/Bruce/wiki/config.conf)
 * [Serial](https://github.com/pr3y/Bruce/wiki/Serial)
