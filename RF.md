@@ -11,3 +11,6 @@
 - [x] Spectrum
 - [x] Jammer Full (New) - @incursiohack
 - [x] Jammer Intermittent (New) - @incursiohack
+
+## Replay payloads like flipper!
+Bruce now can send raw formats, like the ones supported in [this repository](https://github.com/Zero-Sploit/FlipperZero-Subghz-DB/tree/main/subghz)
