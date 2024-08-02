@@ -1,0 +1,1 @@
+Wardriving in Bruce is possible [after this PR](https://github.com/pr3y/Bruce/pull/100), so if you have a GPS module from M5stack you can startwardriving and check for the .csv that can be uploaded to Wigle also!
