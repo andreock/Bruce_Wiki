@@ -4,7 +4,7 @@ ir, rf, music_player, say, led, power, clock
 ```
 
 # Examples
-talk with Bruce with
+talk to Bruce with
 ```
 say My name is Bruce
 ```
