@@ -8,6 +8,7 @@
 * [Interface](https://github.com/pr3y/Bruce/wiki/Interface)
 * [config.conf](https://github.com/pr3y/Bruce/wiki/config.conf)
 * [Serial](https://github.com/pr3y/Bruce/wiki/Serial)
+* [Shortcuts](https://github.com/pr3y/Bruce/wiki/Shortcuts)
 * [BLE](https://github.com/pr3y/Bruce/wiki/BLE)
   * [AppleJuice](https://github.com/pr3y/Bruce/wiki/BLE#applejuice)
   * [SwiftPair](https://github.com/pr3y/Bruce/wiki/BLE#swiftpair)
