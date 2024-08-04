@@ -2,7 +2,7 @@ Wardriving in Bruce is possible [after this PR](https://github.com/pr3y/Bruce/pu
 
 WiGLE (Wireless Geographic Logging Engine) is an online platform that collects and maps Wi-Fi and cellular network data globally. Users can upload network data they encounter, view coverage maps, and search for specific networks.
 
-## How to Use WiGLE Daily:
+## How to Use WiGLE Daily
 
 1 - Network Mapping: Find and map Wi-Fi networks in specific areas, useful for wardriving or security studies.
 
@@ -13,7 +13,7 @@ WiGLE (Wireless Geographic Logging Engine) is an online platform that collects a
 4 - Research: Used by researchers to analyze network patterns and security.
 
 
-## How to begin:
+## How to begin
 
 1 - Create an Account: [WiGLE.net](https://wigle.net/)
 
@@ -24,7 +24,7 @@ WiGLE (Wireless Geographic Logging Engine) is an online platform that collects a
 4 - Shark, you have already collaborated, whenever you find new wifi networks in wardriving, just upload the file.
 
 
-## Tip:
+## Tip
 On the "Statistics: Manufacturer > SSID/Manufacturer" page ([SSID Stats](https://wigle.net/stats#ssidstats)), you can find a list of the most used Wi-Fi network names globally, which can inspire ideas for Bruce's Evil Portal ([Evil Portal](https://github.com/pr3y/Bruce/wiki/WiFi#evil-portal)).
 
 [@IncursioHack](https://github.com/IncursioHack)
