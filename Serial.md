@@ -40,7 +40,7 @@ turn off my LG AC via a RAW IR file (already stored on the FS):
 ir tx_from_file AC_LG_SX122CL_off.ir
 ```
 
-turn on a powerplug from decoded Sub file (already stored on the FS):
+turn on an smart power socket from a decoded Sub file (already stored on the FS):
 ```
 subghz tx_from_file plug1_on.sub
 ````
