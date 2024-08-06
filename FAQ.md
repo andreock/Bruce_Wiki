@@ -15,7 +15,8 @@ For the WebUI, username=`admin`, password=`bruce`
 
  - if using unofficially supported modules, double check the wiring is correct
  - try putting the transmitter and receiver closer (<10cm), many cheap modules have poor ranges.
- - check the [serial log](https://github.com/pr3y/Bruce/wiki/Serial) for errors
+ - most RF modules only supports the 433mHz frequency with ASK/OOK modulation.
+ - check the [serial log](https://github.com/pr3y/Bruce/wiki/Serial) for errors.
  - use another custom IR/RF software to check and compare the signals. e.g. [rtl_433](https://github.com/merbanan/rtl_433) for RF, [Tasmota](https://tasmota.github.io/docs/Tasmota-IR/) for both IR and RF.
 
 # Port to non-M5Stack boards?
