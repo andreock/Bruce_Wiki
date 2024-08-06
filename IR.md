@@ -27,7 +27,7 @@ default pinouts: `Tx=GROVE_SDA, Rx=GROVE_SCL`
 
 ## Replay payloads like flipper!
 
-For examples of IR files, you can check https://github.com/pr3y/Bruce/tree/main/sd_files
+For examples of IR files, you can check https://github.com/pr3y/Bruce/tree/main/sd_files/infrared
 
 methods to transmit `.ir` files:
 
