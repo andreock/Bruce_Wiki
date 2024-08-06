@@ -11,4 +11,4 @@ When you are on the main menu of Bruce, you can utilize the following keyboard s
 - `f` : Start the file manager on SD card (if present)
 - `l` : Start the file manager on LittleFS
 
-When you are in a submenu, you can use the numbered keys (1-9) to quick switch to an option. Press the same key twice to confirm.
+When you are in a submenu, you can use the numbered keys (1-9) to quick switch to an option. Press the same key again to confirm.
