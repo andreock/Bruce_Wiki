@@ -1,9 +1,3 @@
-## TV-B-Gone
-Spams infrared for turning off screens.
-
-## Custom IR
-* For examples of IR files, you can check https://github.com/pr3y/Bruce/tree/main/sd_files
-Read custom IR codes from a file in LittleFS and SDCard.
 
 ## SD Card Mngr
 Create Folders or Rename, Copy (to SPIFFS also) and Delete files.
