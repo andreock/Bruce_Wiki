@@ -6,7 +6,7 @@ use the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui)
 
 # default passwords?
 
-For AP mode the password is `brucenet`.
+For AP mode wifi network the password is `brucenet`.
 
 For the WebUI, username=`admin`, password=`bruce`
 
