@@ -3,7 +3,7 @@
 - m5stack [RF433R](https://docs.m5stack.com/en/unit/rf433_r) and [RF433T](https://docs.m5stack.com/en/unit/rf433_t) modules
 - [FS1000A transmitter + XY-MK-5V receiver](https://components101.com/modules/433-mhz-rf-transmitter-module), default pins: `Tx=GROVE_SDA`, `Rx=GROVE_SCL` 
 
-FS1000A/XY-MK-5V have poor ranges, check [a comparison with other single-pinned modules here](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html)
+**FS1000A/XY-MK-5V have poor ranges**, check [a comparison with other single-pinned modules here](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html)
 
 ## Unsupported modules
 
