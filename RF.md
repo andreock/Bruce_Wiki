@@ -5,7 +5,7 @@
 
 FS1000A/XY-MK-5V have poor ranges, check [a comparison with other single-pinned modules here](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html)
 
-## Not-Supported modules
+## Unsupported modules
 
 - CC1101 (testing with exti/o2 from m5stack)
 - HC-11 and HC-12
