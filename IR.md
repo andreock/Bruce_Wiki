@@ -25,11 +25,11 @@ default pinouts: `Tx=GROVE_SDA, Rx=GROVE_SCL`
  - [x] Custom IR: Send custom IR codes from a file in LittleFS and SDCard.
  - [x] IR read
 
+## Replay payloads like flipper!
+
 For examples of IR files, you can check https://github.com/pr3y/Bruce/tree/main/sd_files
 
-## How to transmit .IR files
-
-different methods:
+methods to transmit `.ir` files:
 
 1. via the "Custom IR" app in the "IR" menu (the only way to select commands individually)
 2. via the SDCard/LittleFS file manager in the "Others" menu (only spam all)
