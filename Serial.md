@@ -13,7 +13,7 @@ Most of these commands are compatible with the [Flipper Zero CLI](https://docs.f
 - via a [python script](https://github.com/wh00hw/pyFlipper)
 - from a smartphone using [SerialManager](https://github.com/delletenebre/SerialManager2)
 - via the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui) ["SerialCmd" button](https://github.com/pr3y/Bruce/pull/134)
-- after starting the WebUI, with `curl -XPOST "http://bruce.local/cm" -d "cmnd=ir tx nec 04000000 08000000"`
+- after starting the WebUI, with `curl -XPOST "http://bruce.local/cm" -d "cmnd=say My name is Bruce"`
 
 # Examples
 
