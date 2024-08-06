@@ -38,8 +38,6 @@
   * [Scan Hosts](https://github.com/pr3y/Bruce/wiki/WiFi#scan-hosts)
   * [Wireguard Tunneling](https://github.com/pr3y/Bruce/wiki/WiFi#wireguard-tunneling)
 * [Others](https://github.com/pr3y/Bruce/wiki/Others)
-  * [TV-B-Gone](https://github.com/pr3y/Bruce/wiki/Others#tv-b-gone)
-  * [Custom IR](https://github.com/pr3y/Bruce/wiki/Others#custom-ir)
   * [SD Card Mngr](https://github.com/pr3y/Bruce/wiki/Others#sd-card-mngr)
   * [SPIFFS Mngr](https://github.com/pr3y/Bruce/wiki/Others#spiffs-mngr)
   * [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui)
