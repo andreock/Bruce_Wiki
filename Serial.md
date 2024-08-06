@@ -5,7 +5,7 @@ ir, rf, music_player, say, led, power, clock
 
 # Sending serial commands
 
-- via the [Arduino IDE Serial Monitor](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor/), Putty, or any other serial terminal app
+- via the [Arduino IDE Serial Monitor](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor/), [Putty](https://pbxbook.com/voip/sputty.html), or any other serial terminal app
 - via a bash script: `echo "say My name is Bruce" | busybox microcom -s 115200 /dev/ttyACM0  -t 1000`
 - via a [python script](https://github.com/wh00hw/pyFlipper)
 - from a smartphone using [SerialManager](https://github.com/delletenebre/SerialManager2)
