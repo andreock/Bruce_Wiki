@@ -27,3 +27,10 @@ default pins: `Tx=GROVE_SDA`, `Rx=GROVE_SCL`
 ## Replay payloads like flipper!
 
 Bruce now can send raw formats, like the ones supported in [this repository](https://github.com/Zero-Sploit/FlipperZero-Subghz-DB/tree/main/subghz)
+
+methods to transmit `.sub` files:
+
+1. via the "Custom SubGhz" app in the "RF" menu
+2. via the SDCard/LittleFS file manager in the "Others" menu
+3. via the WebUI, click on the [antenna-like button next to the file](https://github.com/pr3y/Bruce/pull/124)
+4. via a [serial cmd](https://github.com/pr3y/Bruce/wiki/Serial) like `subghz tx_from_file plug1_on.sub`
