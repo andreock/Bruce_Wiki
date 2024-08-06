@@ -3,6 +3,9 @@ Bruce also accept command inputs via serial after https://github.com/pr3y/Bruce/
 ir, rf, music_player, say, led, power, clock
 ```
 
+Most of these commands are compatible with the [Flipper Zero CLI](https://docs.flipper.net/development/cli#0Z9fs).
+
+
 # Sending serial commands
 
 - via the [Arduino IDE Serial Monitor](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor/), [Putty](https://pbxbook.com/voip/sputty.html), or any other serial terminal app
