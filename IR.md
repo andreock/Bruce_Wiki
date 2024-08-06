@@ -22,7 +22,7 @@ NOTE: KY-005 and KY-022 may need modding to get a good range: [source1](https://
 ## Features:
 
  - [x] TV-B-Gone: Spams infrared for turning off screens.
- - [x] Custom IR: Read custom IR codes from a file in LittleFS and SDCard.
+ - [x] Custom IR: Send custom IR codes from a file in LittleFS and SDCard.
  - [x] IR read
 
 For examples of IR files, you can check https://github.com/pr3y/Bruce/tree/main/sd_files
