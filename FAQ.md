@@ -11,7 +11,7 @@ For AP mode wifi network the password is `brucenet`.
 For the WebUI, username=`admin`, password=`bruce`
 
 
-# IR/RF transmitter/receiver are not working
+# IR/RF transmitter/receiver not working?
 
  - if using unofficially supported modules, double check the wiring is correct
  - try putting the transmitter and receiver closer, many cheap modules have poor ranges.
