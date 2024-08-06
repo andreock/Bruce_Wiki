@@ -12,7 +12,7 @@
  [source2](https://circuitdigest.com/forums/internet-things/how-interface-hx-53-ir-transmitter-infrared-sensor-module-esp32))
 - [DIY board](https://tasmota.github.io/docs/IR-Remote/#related-projects)
 
-default pinouts: `Tx=GROVE_SDA, Rx=GROVE_SCL`
+default pinouts: `Tx=(builtin pin), Rx=GROVE_SCL`
 
 
 ### Unsupported modules
