@@ -1,17 +1,17 @@
 
-# how to transfer files to/from the SD/LittleSD?
+# How to transfer files to/from the SD/LittleFS memory?
 
-use the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui)
+Use the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui)
 
 
-# default passwords?
+# Default passwords?
 
 For AP mode wifi network the password is `brucenet`.
 
 For the WebUI, username=`admin`, password=`bruce`
 
 
-# port to non-M5Stack boards?
+# Port to non-M5Stack boards?
 
 Not officially supported.
 
