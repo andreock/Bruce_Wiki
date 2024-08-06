@@ -14,7 +14,7 @@ For the WebUI, username=`admin`, password=`bruce`
 # IR/RF transmitter/receiver not working?
 
  - if using unofficially supported modules, double check the wiring is correct
- - try putting the transmitter and receiver closer, many cheap modules have poor ranges.
+ - try putting the transmitter and receiver closer (<20cm), many cheap modules have poor ranges.
  - check the [serial log](https://github.com/pr3y/Bruce/wiki/Serial) for errors
  - use another custom IR/RF software to check and compare the signals. e.g. [rtl_433](https://github.com/merbanan/rtl_433) for RF, [Tasmota](https://tasmota.github.io/docs/Tasmota-IR/) for IR.
 
