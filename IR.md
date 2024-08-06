@@ -12,7 +12,7 @@
 
 default pinouts: `Tx=GROVE_SDA, Rx=GROVE_SCL`
 
-NOTE: KY-005 and KY-022 may need modding to get a good range ([source1],(https://www.reddit.com/r/AskElectronics/comments/183mhh6/increase_voltage_power_for_ir_led_powered_by_33v/)
+NOTE: KY-005 and KY-022 may need modding to get a good range ([source1](https://www.reddit.com/r/AskElectronics/comments/183mhh6/increase_voltage_power_for_ir_led_powered_by_33v/), 
  [source2](https://circuitdigest.com/forums/internet-things/how-interface-hx-53-ir-transmitter-infrared-sensor-module-esp32))
 
 ### Unsupported modules
