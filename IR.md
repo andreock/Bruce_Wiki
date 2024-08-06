@@ -27,7 +27,7 @@ default pinouts: `Tx=GROVE_SDA, Rx=GROVE_SCL`
 
 For examples of IR files, you can check https://github.com/pr3y/Bruce/tree/main/sd_files
 
-## How to send .IR files
+## How to transmit .IR files
 
 different methods:
 
@@ -35,6 +35,3 @@ different methods:
 2. via the SDCard/LittleFS file manager in the "Others" menu (only spam all)
 3. via the WebUI, click on the [antenna-like button next to the file](https://github.com/pr3y/Bruce/pull/124) (only spam all)
 4. via a [serial cmd](https://github.com/pr3y/Bruce/wiki/Serial) like `ir tx_from_file AC_LG_SX122CL_off.ir` (only spam all)
-
-
-
