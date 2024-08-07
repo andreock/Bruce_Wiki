@@ -26,7 +26,7 @@ default pins: `Tx=GROVE_SDA`, `Rx=GROVE_SCL`
 ## Features
 
 - [x] Scan/Copy
-- [ ] Replay
+- [x] Replay
 - [x] Custom SubGhz (limited compatibility)
 - [x] Spectrum
 - [x] Jammer Full (New) - @incursiohack
