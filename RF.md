@@ -3,6 +3,11 @@
 - M5Stack [RF433R](https://docs.m5stack.com/en/unit/rf433_r) and [RF433T](https://docs.m5stack.com/en/unit/rf433_t) modules
 - CC1101 ([WIP via GPIO pins](https://github.com/pr3y/Bruce/pull/135), also testing with exti/o2 from m5stack) 
 
+### CC1101 connection pinout
+
+WIP
+
+
 ## Unofficial
 
 - [FS1000A transmitter + XY-MK-5V receiver](https://components101.com/modules/433-mhz-rf-transmitter-module) (also sold with other names)
@@ -15,10 +20,6 @@ default pins: `Tx=GROVE_SDA`, `Rx=GROVE_SCL`
 
 - HC-11 and HC-12
 
-
-### CC1101 connection
-
-WIP
 
 ## Features
 
