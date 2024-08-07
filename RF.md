@@ -5,7 +5,7 @@
 
 ### CC1101 connection pinout
 
-(Still WIP, this page will be update when ready for prime time)
+(Still WIP, this page will be updated when ready for prime time)
 
 
 ## Unofficial
