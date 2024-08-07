@@ -1,7 +1,7 @@
 ## Supported modules
 
-- M5Stack [RF433R](https://docs.m5stack.com/en/unit/rf433_r) and [RF433T](https://docs.m5stack.com/en/unit/rf433_t) modules
-- CC1101 ([via GPIO pins](https://github.com/pr3y/Bruce/pull/135), also testing with exti/o2 from m5stack) 
+- M5Stack [RF433R](https://docs.m5stack.com/en/unit/rf433_r) and [RF433T](https://docs.m5stack.com/en/unit/rf433_t) modules -> fixed frequency of 433MHz, only ASK/OOK modulation
+- CC1101 ([via GPIO pins](https://github.com/pr3y/Bruce/pull/135), also testing with exti/o2 from m5stack) -> lot of frequencies and modulations supported
 
 ### CC1101 connection pinout
 
@@ -10,7 +10,10 @@ WIP
 
 ## Unofficial
 
-- [FS1000A transmitter + XY-MK-5V receiver](https://components101.com/modules/433-mhz-rf-transmitter-module) (also sold with other names) **NOTE: some have poor ranges**, may need to mod the antenna to get a better range. Also check [a comparison with other single-pinned modules here](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html)
+- [FS1000A transmitter + XY-MK-5V receiver](https://components101.com/modules/433-mhz-rf-transmitter-module) (also sold with other names) 
+- other single-pinned modules. [Comparison here](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html)
+
+**NOTE: some have poor ranges**, may need to mod the antenna to get a better range.
 
 default pins: `Tx=GROVE_SDA`, `Rx=GROVE_SCL` 
 
