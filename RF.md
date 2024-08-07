@@ -1,7 +1,7 @@
 ## Supported modules
 
 - M5Stack [RF433R](https://docs.m5stack.com/en/unit/rf433_r) and [RF433T](https://docs.m5stack.com/en/unit/rf433_t) modules
-- CC1101 (WIP, also testing with exti/o2 from m5stack) https://github.com/pr3y/Bruce/pull/135
+- CC1101 ([WIP via GPIO pins](https://github.com/pr3y/Bruce/pull/135), also testing with exti/o2 from m5stack) 
 
 ## Unofficial
 
