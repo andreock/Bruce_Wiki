@@ -10,7 +10,7 @@ WIP
 
 ## Unofficial
 
-- [FS1000A transmitter + XY-MK-5V receiver](https://components101.com/modules/433-mhz-rf-transmitter-module) (also sold with other names) 
+- [FS1000A transmitter + XY-MK-5V receiver](https://components101.com/modules/433-mhz-rf-transmitter-module) (also sold with other names)  -> fixed frequency (usually of 433MHz), only ASK/OOK modulation
 - other single-pinned modules. [Comparison here](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html)
 
 **NOTE: some have poor ranges**, may need to mod the antenna to get a better range.
