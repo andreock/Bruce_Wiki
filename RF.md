@@ -10,11 +10,10 @@ WIP
 
 ## Unofficial
 
-- [FS1000A transmitter + XY-MK-5V receiver](https://components101.com/modules/433-mhz-rf-transmitter-module) (also sold with other names)
+- [FS1000A transmitter + XY-MK-5V receiver](https://components101.com/modules/433-mhz-rf-transmitter-module) (also sold with other names) **NOTE: some have poor ranges**, may need to mod the antenna to get a better range. Also check [a comparison with other single-pinned modules here](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html)
 
 default pins: `Tx=GROVE_SDA`, `Rx=GROVE_SCL` 
 
-**NOTE: FS1000A/XY-MK-5V have poor ranges**, check [a comparison with other single-pinned modules here](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html)
 
 ## Unsupported modules
 
@@ -36,7 +35,9 @@ Bruce now can send raw formats, like the ones supported in [this repository](htt
 
 methods to transmit `.sub` files:
 
-1. via the "Custom SubGhz" app in the "RF" menu
-2. via the SDCard/LittleFS file manager in the "Others" menu
-3. via the WebUI, click on the [antenna-like button next to the file](https://github.com/pr3y/Bruce/pull/124)
-4. via a [serial cmd](https://github.com/pr3y/Bruce/wiki/Serial) like `subghz tx_from_file plug1_on.sub`
+ - via the "Custom SubGhz" app in the "RF" menu
+ - via the SDCard/LittleFS file manager in the "Others" menu
+ - via the WebUI, click on the [antenna-like button next to the file](https://github.com/pr3y/Bruce/pull/124)
+ - via a [serial cmd](https://github.com/pr3y/Bruce/wiki/Serial) like `subghz tx_from_file plug1_on.sub`
+
+
