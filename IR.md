@@ -10,7 +10,7 @@
  [source2](https://circuitdigest.com/forums/internet-things/how-interface-hx-53-ir-transmitter-infrared-sensor-module-esp32))
 - [Elecrow Arduino Infrared Remote Control IOT Smart IR Module](https://www.elecrow.com/arduino-infrared-remote-control-iot-smart-ir-module.html) (works fine @3.3V, no need to mod)
 - IR Hats for Raspberry Pi (meant for 3.3V, should work fine)
-- [LOLIN D1 IR Shield](https://www.wemos.cc/en/latest/d1_mini_shield/ir.html) (meant for 3.3V, soldering req.)
+- [LOLIN D1 IR Shield](https://www.wemos.cc/en/latest/d1_mini_shield/ir.html) (needs soldering)
 - [DIY board](https://tasmota.github.io/docs/IR-Remote/#related-projects)
 
 default pinouts: `Tx=(builtin led), Rx=GROVE_SCL`
