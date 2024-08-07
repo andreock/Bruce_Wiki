@@ -1,6 +1,6 @@
 Bruce also accept command inputs via serial after https://github.com/pr3y/Bruce/pull/84, here are some Serial input commands that Bruce can interact with:
 ```
-ir, rf, music_player, say, led, power, clock, tone
+ir, subghz, music_player, say, led, power, clock, tone
 ```
 
 Most of these commands are compatible with the [Flipper Zero CLI](https://docs.flipper.net/development/cli#0Z9fs).
