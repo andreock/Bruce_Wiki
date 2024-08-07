@@ -15,6 +15,11 @@ default pins: `Tx=GROVE_SDA`, `Rx=GROVE_SCL`
 
 - HC-11 and HC-12
 
+
+### CC1101 connection
+
+WIP
+
 ## Features
 
 - [x] Scan/Copy
