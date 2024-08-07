@@ -24,7 +24,7 @@ sudo dnf update
 sudo dnf install python3-pip git
 ```
 
-After running the first time, a compilation error will occur.
+After running the first time, a compilation error will occur (`multiple definition of ieee80211_raw_frame_sanity_check`).
 ```sh
 pio run --target clean
 pio run -e m5stack-cardputer
