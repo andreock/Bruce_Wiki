@@ -51,5 +51,19 @@ pio run -e m5stack-cplus1_1
 bash build.sh
 ```
 
+# Windows build
+* Install VSCode
+* Download the repository and extract it somewhere you want
+* Within VSCode, `File>Open Folder...` and select the folder of the firmware
+* If it doesn't prompt to install Platformio, click on "Extentions" (4 swares icon on the left) and install Platformio
+* After the Platformio Icon. On `Project Tasks` select `Default` and click in `Build All` an WAIT!!
+
+**This step may take several minutes depending of your computer, and will FAIL at the end, but this is an IMPORTANT STEP!!**
+* you will have the following error for all envs: `:\Users\<Your user>\AppData\Local\Arduino15\packages\m5stack\hardware\esp32\2.1.1/tools/sdk/esp32s3/lib\libnet80211.a(ieee80211_output.o): in function `ieee80211_raw_frame_sanity_check': (.text.ieee80211_raw_frame_sanity_check+0x5c): multiple definition of `ieee80211_raw_frame_sanity_check'; `
+* Now Close VSCode
+* Go to the Bruce folder and run the file "deauth_setup.bat", it will patch the Arduino-Esp32 framework
+* Open VSCode, on `Project Tasks` select `Default` and click in `Build All` an wait, now it should build with **SUCCESS!!**
+
+
 # Github
 You can also use the Github workflow to build the binaries for you with Actions, the last releases are also available there on the Artefacts, but you can also fork the project and make the changes you want to this, then build on your own Actions also.
