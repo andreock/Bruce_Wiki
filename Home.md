@@ -1,7 +1,8 @@
 ![Bruce](https://raw.githubusercontent.com/pr3y/Bruce/main/media/pictures/bruce_banner.jpg)
 
 1. <a href="#what">What Is Bruce?</a>
-1. <a href="#purpose">What Is Bruce For?</a>
+2. <a href="#purpose">What Is Bruce For?</a>
+3. <a href="https://github.com/pr3y/Bruce/wiki/FAQ">FAQ</a>
 
 <a name="what" />
 
