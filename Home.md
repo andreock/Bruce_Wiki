@@ -1,4 +1,4 @@
-![Bruce](https://raw.githubusercontent.com/pr3y/Bruce/main/media/bruce_banner.png)
+![Bruce](https://raw.githubusercontent.com/pr3y/Bruce/main/media/pictures/bruce_banner.jpg)
 
 1. <a href="#what">What Is Bruce?</a>
 1. <a href="#purpose">What Is Bruce For?</a>
