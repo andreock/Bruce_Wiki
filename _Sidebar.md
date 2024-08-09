@@ -20,6 +20,7 @@
   * [Features](https://github.com/pr3y/Bruce/wiki/IR#features)
 * [RF](https://github.com/pr3y/Bruce/wiki/RF)
   * [Supported modules](https://github.com/pr3y/Bruce/wiki/RF#supported-modules)
+  * [CC1101](https://github.com/pr3y/Bruce/wiki/CC1101)
   * [Features](https://github.com/pr3y/Bruce/wiki/RF#features)
 * [RFID](https://github.com/pr3y/Bruce/wiki/RFID)
   * [Supported modules](https://github.com/pr3y/Bruce/wiki/RFID#supported-modules)
