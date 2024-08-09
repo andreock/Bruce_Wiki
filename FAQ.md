@@ -17,7 +17,7 @@ For the WebUI, username=`admin`, password=`bruce`
  - check if the module is active and working during transmission:
    - for IR, you can [use a smartphone camera to check if the IR LED is blinking](https://www.youtube.com/watch?v=i4wRNeGQJfw).
    - use a multimeter or an oscilloscope to check activity on the data pin/LED/antenna.
-   - use another device to check and compare the signals. e.g. [rtl_433](https://github.com/merbanan/rtl_433) for RF, [Tasmota](https://tasmota.github.io/docs/Tasmota-IR/) for both IR and RF.
+   - use another device to check and compare the signals. e.g. [rtl_433](https://github.com/merbanan/rtl_433) for RF, [Tasmota](https://tasmota.github.io/docs/Tasmota-IR/) or a [Broadlink RM4 Pro](https://www.ibroadlink.com/productinfo/762672.html) for both IR and RF.
  - try putting the transmitter and receiver closer (<10cm), many cheap modules have poor ranges.
  - most RF modules only supports the 433MHz frequency with ASK/OOK modulation. Check if your `.sub` file or source signal is compatible.
  - check the [serial log](https://github.com/pr3y/Bruce/wiki/Serial) for errors.
