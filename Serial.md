@@ -1,6 +1,6 @@
 Bruce also accept command inputs via serial after https://github.com/pr3y/Bruce/pull/84, here are some Serial input commands that Bruce can interact with:
 ```
-ir, subghz, music_player, say, led, power, clock, tone
+ir, subghz, music_player, say, led, power, clock, tone, gpio, storage
 ```
 
 Most of these commands are compatible with the [Flipper Zero CLI](https://docs.flipper.net/development/cli#0Z9fs).
@@ -57,7 +57,25 @@ execute a badusb script (already stored on the FS):
 badusb tx_from_file HelloWorld.txt
 ```
 
+set a pin in (digital) output mode (`pinMode()`, only on unused GPIO pins):
+````
+gpio mode 2 0 
+````
 
+sets the a pin's value (`digitalWrite`, only on unused GPIO pins):
+````
+gpio set 2 0 
+````
+
+read a pin's value (`digitalRead`, only on unused GPIO pins):
+````
+gpio read 2
+````
+
+read a file contenxt, and output on the console:
+````
+storage read bruce.txt
+````
 
 
 
