@@ -1,6 +1,6 @@
 Bruce also accept command inputs via serial after https://github.com/pr3y/Bruce/pull/84, here are some Serial input commands that Bruce can interact with:
 ```
-ir, subghz, music_player, say, led, power, clock, tone, gpio, storage
+ir, subghz, music_player, say, led, power, clock, tone, gpio, i2c, storage, settings, factory_reset
 ```
 
 Most of these commands are compatible with the [Flipper Zero CLI](https://docs.flipper.net/development/cli#0Z9fs).
@@ -77,5 +77,17 @@ read a file contenxt, and output on the console:
 storage read bruce.txt
 ````
 
+scan connected I2C devieces:
+````
+i2c
+````
 
+View currently-active settings:
+````
+settings
+````
 
+Reset settings to the default:
+````
+factory_reset
+````
