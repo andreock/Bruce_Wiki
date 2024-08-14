@@ -19,5 +19,16 @@ Languages ​​in English and Brazilian Portuguese and some error messages were
 - **PN532** - WIP
 
 ## Features
-- [x] Read and Write
-- [ ] Replay ?
+### RFID 13.56MHz
+- [x] Read
+- [x] Write
+- [x] Clone
+- [x] Write NDEF Records (NFC tags only)
+- [x] Erase
+- [x] Save file
+- [x] Load file
+- [ ] Emulate
+
+### RFID 125kHz
+- [x] Read
+- [x] Save file
