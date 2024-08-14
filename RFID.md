@@ -11,14 +11,13 @@ RFID tags that can be **written** to allow users to modify the data stored on th
 
 Tags that can be **cloned** are a security concern. Cloning an RFID tag involves making a duplicate copy of the tag's information, which can be used maliciously for unauthorized access or fraudulent activities. To clone a tag, you typically need to write to **block 0**, which requires a special type of tag that supports this functionality.
 
+
 ## Common types of tags for RFID and NFC
 
 - **MIFARE Classic 1k/4k**: A widely used RFID protocol that operates at 13.56MHz frequency and offers 1KB or 4KB of memory storage. It is commonly used in access control systems, transportation, and loyalty programs. You can find clonable version of those tags [here](https://pt.aliexpress.com/item/1005006787338686.html).
 - **NTAG Series**: NTAG tags, such as NTAG213 and NTAG215, are popular NFC tag types operating at 13.56MHz. They are known for their compatibility with a wide range of NFC-enabled devices and applications. Those tags support NDEF records that can be interpreted by smartphones.
 - **EM4100 and T5557**: RFID protocols operating at 125kHz frequency, commonly used for low-frequency access control systems, identification badges, key fobs, asset tracking, and other applications requiring proximity-based identification.
 
-
-![RFID2 moudule](./media/nfc.gif)
 
 ## Supported modules
 
