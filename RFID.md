@@ -1,9 +1,3 @@
-## Supported modules
-
-- **M5Stack [RFID2](https://docs.m5stack.com/en/unit/rfid2) module** 
-- **RDM6300 RFID 125kHz module** ([Connection Schema](https://github.com/pr3y/Bruce/pull/182#issuecomment-2287692412))
-
-
 It is now possible to use the M5Stack RFID2 (WS1850S) to read and write Mifare Classic cards and tags. From what we investigated, this device does not allow emulation, so we recommend that you use an adhesive NFC tag on your Cardputer.
 New functions involving NFC will be developed in the coming seasons.
 
@@ -14,9 +8,15 @@ Languages ​​in English and Brazilian Portuguese and some error messages were
 
 ## Supported modules
 
-- m5stack RFID2 module
-- MFRC-522 with the I2C module from m5stack
-- PN532(?)
+- RFID 13.56MHz
+  - **M5Stack [RFID2](https://docs.m5stack.com/en/unit/rfid2) module** 
+  - **MFRC-522** - with the I2C module from m5stack
+- RFID 125kHz
+  - **RDM6300** ([Connection Schema](https://github.com/pr3y/Bruce/pull/182#issuecomment-2287692412))
+
+## Unsupported modules
+
+- **PN532** - WIP
 
 ## Features
 - [x] Read and Write
