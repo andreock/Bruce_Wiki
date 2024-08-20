@@ -13,7 +13,7 @@
 default pins: `Tx=GROVE_SDA`, `Rx=GROVE_SCL` 
 
 
-## Unsupported modules
+## Unsupported/Not working
 
 - HC-11 and HC-12
 
