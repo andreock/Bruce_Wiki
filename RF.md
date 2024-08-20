@@ -1,7 +1,7 @@
 ## Supported modules
 
-- **M5Stack [RF433R](https://docs.m5stack.com/en/unit/rf433_r) and [RF433T](https://docs.m5stack.com/en/unit/rf433_t)** modules -> fixed frequency of 433MHz, only ASK/OOK modulation
-- **CC1101 SPI module** ([via GPIO pins](https://github.com/pr3y/Bruce/wiki/CC1101), also testing with exti/o2 from m5stack) -> lot of frequencies and modulations supported
+- **M5Stack [RF433R](https://docs.m5stack.com/en/unit/rf433_r) and [RF433T](https://docs.m5stack.com/en/unit/rf433_t)** modules -> fixed frequency of 433MHz, only ASK/OOK modulation, easier to connect
+- **CC1101 SPI module** ([via GPIO pins](https://github.com/pr3y/Bruce/wiki/CC1101), also testing with exti/o2 from m5stack) -> lot of frequencies and modulations supported, more complicated to connect
 
 ## Unofficial
 
