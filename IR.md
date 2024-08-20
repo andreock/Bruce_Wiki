@@ -15,8 +15,7 @@
 
 default pinouts: `Tx=(builtin led), Rx=GROVE_SCL`
 
-
-### Unsupported modules
+### Unsupported/Not working
 
  - YT-IRTM transmitter/receiver (serial connection, NEC protocol only)
 
