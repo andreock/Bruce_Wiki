@@ -72,9 +72,19 @@ read a pin's value (`digitalRead`, only on unused GPIO pins):
 gpio read 2
 ````
 
-read a file contenxt, and output on the console:
+read a file content, and output on the console:
 ````
 storage read bruce.txt
+````
+
+list files on the root (SD card if present, LittleFS otherwise):
+````
+storage list
+````
+
+delete a file:
+````
+storage remove BruceRF/bruce_0.sub
 ````
 
 scan connected I2C devieces:
