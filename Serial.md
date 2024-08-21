@@ -57,29 +57,29 @@ execute a badusb script (already stored on the FS):
 badusb tx_from_file HelloWorld.txt
 ```
 
-set a pin in (digital) output mode (`pinMode()`, only on unused GPIO pins):
+set a pin in (digital) output mode (only on unused GPIO pins, using Arduino `pinMode()`):
 ````
 gpio mode 2 0 
 ````
 
-sets the a pin's value (`digitalWrite`, only on unused GPIO pins):
+sets the a pin's value (only on unused GPIO pins, using Arduino `digitalWrite()`):
 ````
 gpio set 2 0 
 ````
 
-read a pin's value (`digitalRead`, only on unused GPIO pins):
+read a pin's value (only on unused GPIO pins, using Arduino `digitalRead()`):
 ````
 gpio read 2
 ````
 
 read a file content, and output on the console:
 ````
-storage read bruce.txt
+storage read BruceRF/bruce_0.sub
 ````
 
 list files on the root (SD card if present, LittleFS otherwise):
 ````
-storage list
+storage list /
 ````
 
 delete a file:
