@@ -18,6 +18,7 @@ default pinouts: `Tx=(builtin led), Rx=GROVE_SCL`
 ### Unsupported/Not working
 
  - YT-IRTM transmitter/receiver (serial connection, NEC protocol only)
+ - [Flirc](https://flirc.tv), other unbranded IR receivers/blasters with USB/USB-C ports like [this](https://www.walmart.com/ip/Universal-Remote-Smartphone-IR-Controller-Adapter-USB-C-Infrared-Blaster-Control-for-Android-Phone-All-in-One-Air-Conditioner-TV-DVD-STB-Black/5426981611?selectedSellerId=101177603)
 
 ## Features:
 
