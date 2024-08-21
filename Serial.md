@@ -97,6 +97,11 @@ View currently-active settings:
 settings
 ````
 
+Change the radio module setting:
+````
+settings RfModule 1
+````
+
 Reset settings to the default:
 ````
 factory_reset
