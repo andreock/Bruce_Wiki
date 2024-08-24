@@ -6,7 +6,7 @@
   * [Github](https://github.com/pr3y/Bruce/wiki/Building-from-source#github)
 * [Installing](https://github.com/pr3y/Bruce/wiki/Installing)
 * [Interface](https://github.com/pr3y/Bruce/wiki/Interface)
-* [config.conf](https://github.com/pr3y/Bruce/wiki/config.conf)
+* [bruce.conf](https://github.com/pr3y/Bruce/wiki/bruce.conf)
 * [Serial](https://github.com/pr3y/Bruce/wiki/Serial)
 * [BLE](https://github.com/pr3y/Bruce/wiki/BLE)
   * [BLE Scan](https://github.com/pr3y/Bruce/wiki/BLE#scan)
