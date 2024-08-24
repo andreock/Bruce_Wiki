@@ -1,3 +1,9 @@
+## BLE Scan
+Scan for BLE devices nearby.
+
+## NRF24 Jammer
+Powerfull BLE Jammer with the NRF24 Module on SD Card Sniffer.
+
 ## AppleJuice
 [AppleJuice](https://github.com/ECTO-1A/AppleJuice) iOS Bluetooth device pairing spam. (added on 1.0.0)
 
