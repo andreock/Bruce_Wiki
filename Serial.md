@@ -11,7 +11,7 @@ Most of these commands are compatible with the [Flipper Zero CLI](https://docs.f
 # How to send commands
 
 - via the [Arduino IDE Serial Monitor](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor/), [Putty](https://pbxbook.com/voip/sputty.html), or any other serial terminal app
-- via a bash script: `echo "say My name is Bruce" | busybox microcom -s 115200 /dev/ttyACM0  -t 1000`
+- via the terminal/a bash script: `echo "say My name is Bruce" | busybox microcom -s 115200 /dev/ttyACM0  -t 1000`
 - via a [python script](https://github.com/wh00hw/pyFlipper)
 - from a smartphone using [SerialManager](https://github.com/delletenebre/SerialManager2)
 - via the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui) ["SerialCmd" button](https://github.com/pr3y/Bruce/pull/134)
