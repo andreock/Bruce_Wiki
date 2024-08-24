@@ -1,4 +1,6 @@
-Bruce also accept command inputs via serial after https://github.com/pr3y/Bruce/pull/84, here are some Serial input commands that Bruce can interact with:
+Bruce also accept command inputs via serial port after https://github.com/pr3y/Bruce/pull/84.
+
+List of supported here are some commands:
 ```
 ir, subghz, music_player, say, led, power, clock, tone, gpio, i2c, storage, settings, factory_reset
 ```
