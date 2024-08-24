@@ -1,4 +1,5 @@
-If there is no `config.conf` file on the SD card, Bruce will create this simple json file:
+If there is no `bruce.conf` file on the SD card, Bruce will create this simple json file:
+
 ```json
 [
   {
