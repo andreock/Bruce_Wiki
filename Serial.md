@@ -8,7 +8,7 @@ ir, subghz, music_player, say, led, power, clock, tone, gpio, i2c, storage, sett
 Most of these commands are compatible with the [Flipper Zero CLI](https://docs.flipper.net/development/cli#0Z9fs).
 
 
-# Sending serial commands
+# How to send commands
 
 - via the [Arduino IDE Serial Monitor](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor/), [Putty](https://pbxbook.com/voip/sputty.html), or any other serial terminal app
 - via a bash script: `echo "say My name is Bruce" | busybox microcom -s 115200 /dev/ttyACM0  -t 1000`
