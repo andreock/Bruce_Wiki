@@ -9,6 +9,8 @@
 * [config.conf](https://github.com/pr3y/Bruce/wiki/config.conf)
 * [Serial](https://github.com/pr3y/Bruce/wiki/Serial)
 * [BLE](https://github.com/pr3y/Bruce/wiki/BLE)
+  * [BLE Scan](https://github.com/pr3y/Bruce/wiki/BLE#scan)
+  * [NRF24 Jammer](https://github.com/pr3y/Bruce/wiki/BLE#NRF24-Jammer)
   * [AppleJuice](https://github.com/pr3y/Bruce/wiki/BLE#applejuice)
   * [SwiftPair](https://github.com/pr3y/Bruce/wiki/BLE#swiftpair)
   * [Android Spam](https://github.com/pr3y/Bruce/wiki/BLE#android-spam)
