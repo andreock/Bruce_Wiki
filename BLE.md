@@ -3,6 +3,7 @@ Scan for BLE devices nearby.
 
 ## NRF24 Jammer
 Powerfull BLE Jammer with the NRF24 Module on SD Card Sniffer.
+It uses the same GPIO from [cc1101 in Cardputer](https://github.com/pr3y/Bruce/wiki/CC1101#cardputer)
 
 ## AppleJuice
 [AppleJuice](https://github.com/ECTO-1A/AppleJuice) iOS Bluetooth device pairing spam. (added on 1.0.0)
