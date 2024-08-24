@@ -45,14 +45,14 @@ turn off my LG AC via a RAW IR file (already stored on the FS):
 ir tx_from_file AC_LG_SX122CL_off.ir
 ```
 
-turn on an smart power socket from a decoded Sub file (already stored on the FS):
+turn on a remote-controlled power socket from a decoded Sub file (already stored on the FS):
 ```
 subghz tx_from_file plug1_on.sub
 ````
 
-send a custom rf command (format ` {3-byte hex_key} {frequency} {te} {count}`):
+send a custom rf command (format `{3-byte hex_key} {frequency} {te} {count}`):
 ````
-subghz tx 445533 433920000 174 10  # flipper format
+subghz tx 445533 433920000 174 10
 ````
 
 execute a badusb script (already stored on the FS):
