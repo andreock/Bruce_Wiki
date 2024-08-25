@@ -20,7 +20,7 @@ For the WebUI, username=`admin`, password=`bruce`
    - use another device to check and compare the signals. e.g. [rtl_433](https://github.com/merbanan/rtl_433) for RF, [Tasmota](https://tasmota.github.io/docs/Tasmota-IR/) or a [Broadlink RM4 Pro](https://www.ibroadlink.com/productinfo/762672.html) for both IR and RF.
  - try putting the transmitter and receiver closer (<10cm), many cheap modules have poor ranges.
  - most RF modules only supports the 433MHz frequency with ASK/OOK modulation. Check if your `.sub` file or source signal is compatible.
- - check the [serial log](https://github.com/pr3y/Bruce/wiki/Serial) for errors.
+ - check the [serial log](https://github.com/pr3y/Bruce/wiki/Serial) for errors, some signals may [fail to decode](https://github.com/pr3y/Bruce/issues/216).
 
 # Port to non-M5Stack boards?
 
