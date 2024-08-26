@@ -11,8 +11,10 @@ It needs to a Si4713. Those modules are supported for now:
 ## Wiring
 
 ### Schema
-![Grove](https://github.com/user-attachments/assets/93bd2591-13c5-4351-bbb3-8ddd94334875)
-![Si4713-1](https://github.com/user-attachments/assets/10da3032-7c4f-4ec8-bde5-07a24d6c3a94)
+
+![Grove](https://github.com/user-attachments/assets/93bd2591-13c5-4351-bbb3-8ddd94334875)  
+
+![Si4713-1](https://github.com/user-attachments/assets/5ed5e3f3-9b6e-4b21-af80-455233c5b1d3)
 
 ### Pins
 
