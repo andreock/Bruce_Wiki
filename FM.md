@@ -14,7 +14,7 @@ It needs to a Si4713. Those modules are supported for now:
 
 ![Grove](https://github.com/user-attachments/assets/93bd2591-13c5-4351-bbb3-8ddd94334875)  
 
-![Si4713-1](https://github.com/user-attachments/assets/5ed5e3f3-9b6e-4b21-af80-455233c5b1d3)
+![Si4713-1](https://github.com/user-attachments/assets/8e1a5052-3ba9-4b1e-8686-26a1dd2948c7)
 
 ### Pins
 
