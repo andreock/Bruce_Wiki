@@ -26,3 +26,7 @@ To create pub.key file you should run this in bash:
 ```sh
 base64 -d <<< "your_base64_public_key"|tee pub.key
 ```
+
+## Interpreter
+Now Bruce has a JavaScript Interpreter, added on https://github.com/pr3y/Bruce/pull/218 it allows you to run .js files, some examples can be found on [the repository](https://github.com/pr3y/Bruce/tree/main/sd_files/interpreter).
+This feature is heavily inspired in [justinsknight's Doomlittle](https://github.com/justinknight93/Doolittle)
