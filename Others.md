@@ -28,5 +28,4 @@ base64 -d <<< "your_base64_public_key"|tee pub.key
 ```
 
 ## Interpreter
-Now Bruce has a JavaScript Interpreter, added on https://github.com/pr3y/Bruce/pull/218 it allows you to run .js files, some examples can be found on [the repository](https://github.com/pr3y/Bruce/tree/main/sd_files/interpreter).
-This feature is heavily inspired in [justinsknight's Doomlittle](https://github.com/justinknight93/Doolittle)
+Head over to the [Interpreter Section](https://github.com/pr3y/Bruce/wiki/Interpreter).
