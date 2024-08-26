@@ -1,6 +1,6 @@
 ## Manual for Coding in JavaScript to Bruce
 
-This secction was ported from (justinknight93/Doolittle)[https://github.com/justinknight93/Doolittle], who made a very nice job with its JavaScript interpreter
+This secction was ported from [justinknight93/Doolittle](https://github.com/justinknight93/Doolittle), who made a very nice job with its JavaScript interpreter
 
 Some changes were made and some new functions were added, and more are to be add.
 
