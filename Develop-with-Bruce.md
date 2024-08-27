@@ -1,14 +1,14 @@
 ## Resume
 
 1. [Prerequisites](#prerequisites)
-2. [Bruce structure]()
-3. [Dependencies]()
-4. [Development]()
-    1. [Add a new item in the main menu]()
-    2. [Draw a new icon]()
-    3. [Add or modify menus]()
-    5. [Add or modify sub-menus]()
-    6. [Module functions]()
+2. [Bruce structure](#bruce structure)
+3. [Dependencies](#dependencies)
+4. [Development](#development)
+    1. [Add a new item in the main menu](#add a new item in the main menu)
+    2. [Draw a new icon](#draw a new icon)
+    3. [Add or modify menus](#add or modify menus)
+    5. [Add or modify sub-menus](#add or modify sub-menus)
+    6. [Module functions](#module functions)
 
 ## Prerequisites
 
