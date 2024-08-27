@@ -10,11 +10,17 @@ Make you device as an AP or connect to a network to use the WebUI, with this you
 Before setting up, you need to access http://bruce.local with the credentials on screen to have access to the manager.
 
 ## BadUSB
+
 Only DuckyScript payloads are supported!! for more info on creating your own DuckyScripts [read here](https://docs.hak5.org/hak5-usb-rubber-ducky/ducky-script-basics/hello-world)
 
 To choose a payload for the BadUSB on Cardputer instead of getting rickrolled, you need to create a file on the SD card root directory ending with ".txt".
 You can then select which payload that will be sent when the Cardputer is connected via USB cable.
-New features, SPIFFS and SDCard
+
+Other methods to run badusb scripts:
+
+1. via the SDCard/LittleFS file manager in the "Others" menu (select a `.txt` file)
+2. remotely via the WebUI, click on the [antenna-like button next to the file](https://github.com/pr3y/Bruce/pull/124)
+4. via a [serial cmd](https://github.com/pr3y/Bruce/wiki/Serial) like `badusb tx_from_file HelloWorld.txt`
 
 ## Led control
 Control ESP32 S3 Stamp RGB LED, with the options purple, white, red, green and blue to extra style, also led flash blinks the LED.
