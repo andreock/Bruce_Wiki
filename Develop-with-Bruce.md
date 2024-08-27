@@ -1,6 +1,6 @@
 ## Resume
 
-1. [Prerequisites]()
+1. [Prerequisites](#prerequisites)
 2. [Bruce structure]()
 3. [Dependencies]()
 4. [Development]()
