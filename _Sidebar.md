@@ -4,6 +4,7 @@
 * [Building From Source](https://github.com/pr3y/Bruce/wiki/Building-from-source)
   * [VS Code](https://github.com/pr3y/Bruce/wiki/Building-from-source#vs-code)
   * [Github](https://github.com/pr3y/Bruce/wiki/Building-from-source#github)
+* [Develop with Bruce](https://github.com/pr3y/Bruce/wiki/Develop-with-Bruce)
 * [Installing](https://github.com/pr3y/Bruce/wiki/Installing)
 * [Interface](https://github.com/pr3y/Bruce/wiki/Interface)
 * [bruce.conf](https://github.com/pr3y/Bruce/wiki/bruce.conf)
