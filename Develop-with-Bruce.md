@@ -153,8 +153,6 @@ void drawLoRa(int x, int y) {
 
 ![menu](https://github.com/user-attachments/assets/fcf04298-d988-400f-8ba9-97fde78307b9)
 
-*If you only want to modify an existing menu (ex: adding a new sniffing capacity in WiFi options), go directly to the `loraOptions()` exemple and skip to the `drawLoRa()` function.*
-
 **loraOptions()**
 First comes the declaration in `main_menu.h`:
 ```C
@@ -237,7 +235,7 @@ void lora_gw_run();
 void lora_msg_run();
 ```
 
-Then code the functions:
+Then code the functions in `src/modules/lora/lora.cpp`:
 ```C
 #include "lora.h"
 
