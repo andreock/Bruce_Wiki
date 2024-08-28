@@ -109,3 +109,5 @@ Reset settings to the default:
 ````
 factory_reset
 ````
+
+**NOTE: filenames are case-sensitive on LittleFS only, and cannot contain spaces/escape chars.**
