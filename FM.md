@@ -20,11 +20,16 @@ It needs to a Si4713. Those modules are supported for now:
 
 | Si4713    | M5StickC    | Cardputer          |
 | --------- | ----------- |------------------- |
-| RST       | G0          | CLK (SD Sniffer)   |
+| RST       |             |                    |
 | SCL       | Grove G33   | Grove G1           |
 | SDA       | Grove G32   | Grove G2           |
 | GND       | Grove G     | Grove G            |
 | VIN       | Grove 5V    | Grove 5V           |
+
+ATTENTION: It is necessary to turn on the device (StickC/Cardputer), place 1 wire on the RST pin of the FM Transmitter and quickly touch the end of the wire to GND to activate the RST, this way it is not necessary to use the SD Card Sniffer or the G0 pin of StickC. 
+It is also possible to place a button or resistor for this operation, if you prefer.
+
+[Example Video](https://www.veed.io/view/d70db376-0591-487c-88f9-bab03479010f?panel=share)
 
 ## Features
 
@@ -71,7 +76,5 @@ Radio frequency is set to info traffic station which is `107.7 MHz`.
 In this mode, the Si4713 will listen for all frequency and select the one with minimum noise level, which represents a free radio station.
 
 ### :radio: Attention
-
-When using the SD Card Sniffer with the FM Transmitter, the RST pin makes it impossible to use the MicroSD Card. New possibilities are being explored.
 
 Currently, the audio is transmitted via the P3 cable, that is, it is necessary for an external device connected to the P3 cable to send the audio to the FM Transmitter, an example would be using the smartphone with a P3 - P3 cable, connected to the transmitter and placing some music to play on your smartphone.
