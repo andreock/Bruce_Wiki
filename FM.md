@@ -5,8 +5,8 @@ Feature added in https://github.com/pr3y/Bruce/pull/195
 ## :radio: Supported Modules
 It needs to a Si4713. Those modules are supported for now:
 
-1. [Adafruit Si4713](https://www.adafruit.com/product/1958)
-2. [CJMCU-4713](https://fr.aliexpress.com/w/wholesale-cjmcu%2525252d4713.html?spm=a2g0o.productlist.search.0)
+1. [Adafruit Si4713](https://www.adafruit.com/product/1958) |
+2. [CJMCU-4713](https://s.click.aliexpress.com/e/_DCKYlfz)
 
 ## Wiring
 
