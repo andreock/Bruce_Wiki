@@ -14,17 +14,17 @@ It needs to a Si4713. Those modules are supported for now:
 
 ![Grove](https://github.com/user-attachments/assets/93bd2591-13c5-4351-bbb3-8ddd94334875)  
 
-![Si4713-1](https://github.com/user-attachments/assets/8e1a5052-3ba9-4b1e-8686-26a1dd2948c7)
+![Si4713-1](https://github.com/user-attachments/assets/c4e92864-3c84-4bcc-a73f-a126feeb1cdb)
 
 ### Pins
 
-| Si4713    | M5StickC    |
-| --------- | ----------- |
-| RST       | G0          |
-| SCL       | Grove G32   |
-| SDA       | Grove G33   |
-| GND       | Grove G     |
-| VIN       | Grove 5V    |
+| Si4713    | M5StickC    | Cardputer          |
+| --------- | ----------- |------------------- |
+| RST       | G0          | CLK (SD Sniffer)   |
+| SCL       | Grove G33   | Grove G1           |
+| SDA       | Grove G32   | Grove G2           |
+| GND       | Grove G     | Grove G            |
+| VIN       | Grove 5V    | Grove 5V           |
 
 ## Features
 
@@ -69,3 +69,9 @@ Radio frequency is set to info traffic station which is `107.7 MHz`.
 
 ### :factory: Auto mode
 In this mode, the Si4713 will listen for all frequency and select the one with minimum noise level, which represents a free radio station.
+
+### :radio: Attention
+
+When using the SD Card Sniffer with the FM Transmitter, the RST pin makes it impossible to use the MicroSD Card. New possibilities are being explored.
+
+Currently, the audio is transmitted via the P3 cable, that is, it is necessary for an external device connected to the P3 cable to send the audio to the FM Transmitter, an example would be using the smartphone with a P3 - P3 cable, connected to the transmitter and placing some music to play on your smartphone.
