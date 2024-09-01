@@ -20,7 +20,7 @@ It needs to a Si4713. Those modules are supported for now:
 
 | Si4713    | M5StickC    | Cardputer          |
 | --------- | ----------- |------------------- |
-| RST       |             |                    |
+| RST       | ATTENTION   | ATTENTION          |
 | SCL       | Grove G33   | Grove G1           |
 | SDA       | Grove G32   | Grove G2           |
 | GND       | Grove G     | Grove G            |
