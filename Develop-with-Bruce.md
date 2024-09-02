@@ -25,10 +25,11 @@ Here we will create a new directory and new files:
 ```
 src/
 |-- core/
+|---- menu_items/
 |-- modules/
-|----- lora/
-     |---- lora.h
-     |---- lora.cpp
+|------ lora/
+        |---- lora.h
+        |---- lora.cpp
 ```
 
 ## Dependencies
@@ -62,67 +63,69 @@ You can either add a feature in an existing menu, or create a new item in the ma
 
 **Register an item**
 
-We need to register our item by modifying several files. Add +1 to the `opt` counter definition in `src/main.cpp` in the `loop` function. At this time, it's 9 so we put 10 in it:
+We need to register our item by modifying 2 files:
+* `src/core/menu_items/LoRaMenu.h`
+* `src/core/menu_items/LoRaMenu.cpp`
+
+In `LoRaMenu.h, we declare the menu object with the mandatory methods:
+* `optionsMenu()` --> declare the menu options
+* `draw()` --> draw the item in main menu
+* `getName` --> return the name of the menu
+
+
+In the end, it looks like this:
 ```C
-int opt = 10;
+#ifndef __LORA_MENU_H__
+#define __LORA_MENU_H__
+
+#include "MenuItemInterface.h"
+
+class LORAMenu : public MenuItemInterface {
+public:
+    void optionsMenu(void);
+    void draw(void);
+    String getName(void);
+
+private:
+    String _name = "LoRa";
+    void configMenu(void);
+};
+
+#endif
 ```
 
-Then we need to link our item in the main menu in `src/core/main_menu.cpp`. In `getMainMenuOptions` function, set a new switch case by switching the options. Add a new function call, here `loraOptions()` which does not exist for now. It will contains the options inside the LoRa menu:
+Now in `LoRaMenu.cpp` we will declare the methods we need. Their contents will be explained later in this tutorial.
 ```C
-case 5: // FM Radio
-  FMOptions();
-  break;
-case 6: // LoRa
-  loraOptions(); // This is a new function we will declare later
-  break;
-case 7: // Other
-  otherOptions();
-  break;
-case 8: // Clock
-  runClockLoop();
-  break;
-case 9: // Config
-  configOptions();
-  break;
+#include "LoRaMenu.h"
+#include "core/display.h"
+#include "modules/lora/lora.h"
+
+void LoRaMenu::optionsMenu() {
+    // We will see that later (see bellow)
+
+    delay(200);
+    loopOptions(options,false,true,"LoRa");
+}
+
+String LoRaMenu::getName() {
+    return _name;
+}
+
+void LoRaMenu::draw() {
+    // We will see that later (see bellow)
+}
 ```
 
-Now we need to call the item display, also in `src/code/main_menu.cpp`. We need to declare the item name in `texts` table, and to call the display in the switch case bellow. Do not forget to adjust the table length. Our display function `darwLoRa()` does not exist for now.
-```C
-const char* texts[10] = { "WiFi", "BLE", "RF", "RFID", "IR", "FM","LoRaWAN", "Others", "Clock", "Config" }; // add +1 to table length and add LoRa item.
-
-// [...]
-
-case 5:
-  drawFM(WIDTH/2-40,27+(HEIGHT-134)/2);
-  break;
-case 6:
-  drawLoRa(WIDTH/2-40,27+(HEIGHT-134)/2); // This is our new display call, dont change the parameters
-  break;
-case 7:
-  drawOther(WIDTH/2-40,27+(HEIGHT-134)/2);
-  break;
-case 8:
-  drawClock(WIDTH/2-40,27+(HEIGHT-134)/2);
-  break;
-case 9:
-  drawCfg(WIDTH/2-40,27+(HEIGHT-134)/2);
-  break;
-```
-
-We're done for the register part. Now, we need to declare 2 functions we called earlier: 
-1. `drawLoRa()` --> the icon that will be draw on screen
-4. `loraOptions()` --> the declaration of the menu when the main item is selected
+We're done for the register part. Now, we need to develop the content of the 2 methods previously declared: 
+1. `LoRaMenu::draw()` --> the icon that will be draw on screen
+4. `LoRaMenu::optionsMenu()` --> the declaration of the menu when the main item is selected
 
 ### Draw a new icon
 
 ![main-menu](https://github.com/user-attachments/assets/98669885-fa9c-49c8-968d-6690da07f17b)
 
 **drawLoRa()**
-With this function, you can draw your own icon. This time, you need to declare it in `src/core/display.h`.
-```C
-void drawLoRa(int x, int y);
-```
-To be able to draw, you can use the following functions:
+With this function, you can draw your own icon. To be able to draw, you can use the following functions:
 | Function | Description |
 |:------------|:---------------|
 | `tft.drawLine() `| Draw a simple line |
@@ -136,9 +139,9 @@ To be able to draw, you can use the following functions:
 | `tft.fillCircle()` | Draw and fill a circle |
 | `tft.fillScreen()` | Fill the whole screen |
 
-Here is an exemple of the definition in `src/core/display.cpp`:
+Here is an exemple of the definition in `src/core/menu_items/LoRaMenu.cpp`:
 ```C
-void drawLoRa(int x, int y) {
+void LoRaMenu::draw() {
   // Blank
   tft.fillRect(x,y,80,80,BGCOLOR);
 
@@ -153,20 +156,13 @@ void drawLoRa(int x, int y) {
 
 ![menu](https://github.com/user-attachments/assets/fcf04298-d988-400f-8ba9-97fde78307b9)
 
-**loraOptions()**
-First comes the declaration in `main_menu.h`:
-```C
-void loraOptions();
-```
-Now we need to declare the options, also in `main_menu.cpp`. For this we use the `loopOptions()` function. 
+**LoRaMenu::optionsMenu()**
+
+We need to declare the options, like we started in `src/core/menu_items/LoRaMenu.cpp`. For this we use the `loopOptions()` function. 
 This function takes as an argument an `options` object. In parameter, the `*_run` are functions called when the option will be selected by the user. For now, those functions do not exist.
 Here is an exemple:
 ```C
-/**********************************************************************
-**  Function: loraOptions
-**  LoRaWAN menu options
-**********************************************************************/
-void loraOptions(){
+void LoRaMenu::optionsMenu() {
   options = {
     {"LoRa Gw",         [=]() { lora_gw_run(); }},
     {"Messenger",       [=]() { lora_msg_run(); }},
@@ -176,11 +172,6 @@ void loraOptions(){
   delay(200);
   loopOptions(options,false,true,"LoRa");
 }
-```
-
-As we will use it later, do not forget to add the new import in `src/core/main_menu.cpp` at the begining of the file:
-```C
-#include "modules/lora/lora.h"
 ```
 
 **Return to the main menu**
@@ -228,7 +219,7 @@ void lora_scan_run() {
 
 ### Module functions
 
-You can now start to code the main functions of your modules. Here we already made a call for `lora_gw_run()` and `lora_msg_run()`. Start to declare them in `src/modules/lora/lora.h`:
+You can now start to code the main functions of your module. Here we already made a call for `lora_gw_run()` and `lora_msg_run()`. Start to declare them in `src/modules/lora/lora.h`:
 ```C
 void lora_scan_run();
 void lora_gw_run();
