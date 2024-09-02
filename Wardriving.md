@@ -27,7 +27,7 @@ WiGLE (Wireless Geographic Logging Engine) is an online platform that collects a
 
 2 - Insert the token copied from your Wigle account into the "wigleBasicToken" line of the "bruce.conf" file at the root of your SD card.
 
-3 - Select menu Others > SD Card > BruceWifi > file_name_wardriving.csv
+3 - Select menu Others > SD Card > BruceWardriving > timestamp_wardriving.csv
 
 4 - Select the "Wigle Upload" option.
 
