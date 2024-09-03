@@ -25,7 +25,9 @@ Here we will create a new directory and new files:
 ```
 src/
 |-- core/
-|---- menu_items/
+|------ menu_items/
+        |---- LoRaMenu.h
+        |---- LoRaMenu.cpp
 |-- modules/
 |------ lora/
         |---- lora.h
@@ -143,12 +145,12 @@ Here is an exemple of the definition in `src/core/menu_items/LoRaMenu.cpp`:
 ```C
 void LoRaMenu::draw() {
   // Blank
-  tft.fillRect(x,y,80,80,BGCOLOR);
+  tft.fillRect(iconX,iconY,80,80,BGCOLOR);
 
-  tft.drawArc(19+x,45+y,12,10,130,230,FGCOLOR,BGCOLOR);
-  tft.drawArc(19+x,45+y,22,20,130,230,FGCOLOR,BGCOLOR);
-  tft.drawArc(19+x,45+y,32,30,130,230,FGCOLOR,BGCOLOR);
-  tft.drawCentreString("L o R a",40+x, 40+y, SMOOTH_FONT);
+  tft.drawArc(19+iconX,45+iconY,12,10,130,230,FGCOLOR,BGCOLOR);
+  tft.drawArc(19+iconX,45+iconY,22,20,130,230,FGCOLOR,BGCOLOR);
+  tft.drawArc(19+iconX,45+iconY,32,30,130,230,FGCOLOR,BGCOLOR);
+  tft.drawCentreString("L o R a",40+iconX, 40+iconY, SMOOTH_FONT);
 }
 ```
 
