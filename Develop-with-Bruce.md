@@ -190,7 +190,7 @@ if (!returnToMenu) {
 
 ![sub-menu](https://github.com/user-attachments/assets/576c614a-683f-4c61-b04c-4ac8abe1aaf0)
 
-You may want to be able to draw a sub-menu, for exemple if you want to scan the nework ids, the use select the option and then a sub-menu appears with the found results. For this you can do the exact same thing as a simple menu, it will automatically detect you'are in a sub-menu. Moreover, you can dynamically generate your sub-menu options like this.
+You may want to draw a sub-menu, for exemple if you want to scan the nework ids, the user selects the desired option, then a sub-menu appears with the found results. For this you can do the exact same thing as a simple menu, it will automatically detect you'are in a sub-menu. Moreover, you can dynamically generate your sub-menu options like this.
 
 This is a module specific feature, so the declaration will be in `src/modules/lora/lora.h`:
 ```C
