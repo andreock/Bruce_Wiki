@@ -1,7 +1,7 @@
 ## Supported modules
 
 - builtin IR emitter found in most M5Stack boards
-- [M5Stack Mini Infrared Emitter & Receiver Unit](https://shop.m5stack.com/products/ir-unit) (easier to connect and use than other modules)
+- [M5Stack Mini Infrared Emitter & Receiver Unit](https://shop.m5stack.com/products/ir-unit) (easier to connect than other modules)
 
 ### Unofficial
 
