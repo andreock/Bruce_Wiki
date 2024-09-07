@@ -9,6 +9,18 @@ Bellow you can find some of the
 
 ## API Reference for Native Functions Accessible from JS
 
+ - [Board info](https://github.com/pr3y/Bruce/wiki/Interpreter#get-some-board-information)
+ - [wifi](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#wifi-functions)
+ - [TFT Display](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#tft-display-functions)
+ - [Keyboard](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#keyboard-inputs)
+ - [Storage](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#storage-functions)
+ - [Serial](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#serial-functions)
+ - [Audio](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#audio-functions)
+ - [IR](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#ir-functions)
+ - [Subghz](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#subghzrf-functions)
+ - [Badusb](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#badusb-functions)
+
+
 ### `load(script: string)`
 
 **Description**: Sets the script to be executed next when the current script ends. 
@@ -312,6 +324,37 @@ Bellow you can find some of the
 
 ---
 
+## Keyboard Inputs
+
+### `getPrevPress()`
+**Description**: Return the current state of 'Previous' button;
+
+**Returns**: `boolean`: Returns `true` if pressed and `false` if not pressed
+
+---
+### `getSelPress()`
+**Description**: Return the current state of 'Select' button;
+
+**Returns**: `boolean`: Returns `true` if pressed and `false` if not pressed
+
+---
+
+### `getNextPress()`
+**Description**: Return the current state of 'Next' button;
+
+**Returns**: `boolean`: Returns `true` if pressed and `false` if not pressed
+
+---
+### `getKeysPressed()`
+**Restriction**: Works only in Cardputer
+
+**Description**: Returns the current state of the keys pressed on the M5Cardputer.
+
+**Returns**: `string[]`: An array of strings representing the pressed keys. Possible values include "Delete", "Enter", "Alt", "Tab", "Function", "Option", or the actual key character.
+
+---
+
+
 ## Storage functions
 
 ### `storageRead(filename : string) : string`
@@ -397,7 +440,7 @@ Bellow you can find some of the
 
 ---
 
-## Badusb functions (ESP32S3 only)
+## Badusb functions
 
 ### `badusbSetup()`
 
@@ -420,35 +463,5 @@ Bellow you can find some of the
 ### `badusbPressRaw(hid_key : number)`
 
 [TinyUSB's HID_KEY_* macros](https://github.com/hathach/tinyusb/blob/master/src/class/hid/hid.h)
-
----
-
-## Keyboard Inputs
-
-### `getPrevPress()`
-**Description**: Return the current state of 'Previous' button;
-
-**Returns**: `boolean`: Returns `true` if pressed and `false` if not pressed
-
----
-### `getSelPress()`
-**Description**: Return the current state of 'Select' button;
-
-**Returns**: `boolean`: Returns `true` if pressed and `false` if not pressed
-
----
-
-### `getNextPress()`
-**Description**: Return the current state of 'Next' button;
-
-**Returns**: `boolean`: Returns `true` if pressed and `false` if not pressed
-
----
-### `getKeysPressed()`
-**Restriction**: Works only in Cardputer
-
-**Description**: Returns the current state of the keys pressed on the M5Cardputer.
-
-**Returns**: `string[]`: An array of strings representing the pressed keys. Possible values include "Delete", "Enter", "Alt", "Tab", "Function", "Option", or the actual key character.
 
 ---
