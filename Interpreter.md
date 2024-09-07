@@ -100,7 +100,12 @@ API Reference for Native Functions Accessible from JS:
 
 ---
 ## WiFi functions
-### `wifiConnect()`
+
+### `wifiConnect(ssid : string, timeout_in_seconds : number, pwd : string)`
+
+### `wifiScan()`
+
+### `wifiConnectDialog()`
 **Description**: Open Bruce WiFi connection menu.
 
 ---
