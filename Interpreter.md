@@ -4,10 +4,9 @@ This secction was ported from [justinknight93/Doolittle](https://github.com/just
 
 Some changes were made and some new functions were added, and more are to be add.
 
-Bellow you can find some of the 
+Some [example scripts are here](https://github.com/pr3y/Bruce/tree/main/sd_files/interpreter).
 
-
-## API Reference for Native Functions Accessible from JS
+API Reference for Native Functions Accessible from JS:
 
  - [General](https://github.com/pr3y/Bruce/wiki/Interpreter#general)
  - [Board info](https://github.com/pr3y/Bruce/wiki/Interpreter#get-some-board-information)
