@@ -79,7 +79,7 @@ API Reference for Native Functions Accessible from JS:
 
 ### `exit()`
 
-**Description**: Exit current script.
+**Description**: Exit from the current script.
 
 **Returns**: `void`
 
@@ -389,7 +389,7 @@ API Reference for Native Functions Accessible from JS:
 
 ### `storageRead(filename : string) : string`
 
-**Description**: Read a small text file.
+**Description**: Read a small text file with a single call (<4kb).
 
 **Parameters**:
 
@@ -398,7 +398,6 @@ API Reference for Native Functions Accessible from JS:
 **Returns**: `string`. File contents, or empty string if not found or any other error.
 
 ---
-
 
 ### `storageWrite(filename : string, data : string)`
 
