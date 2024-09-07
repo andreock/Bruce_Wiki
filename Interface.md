@@ -12,3 +12,5 @@ When you are on the main menu of Bruce, you can utilize the following keyboard s
 - `l` : Start the file manager on LittleFS
 
 When you are in a submenu, you can use the numbered keys (1-9) to quick switch to an option. Press the same key again to confirm.
+
+In the file picker you can also cycle filenames by pressing the initial letter in the keyboard, and jump pages with left and right.
