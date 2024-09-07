@@ -11,15 +11,15 @@ Bellow you can find some of the
 
  - [General](https://github.com/pr3y/Bruce/wiki/Interpreter#general)
  - [Board info](https://github.com/pr3y/Bruce/wiki/Interpreter#get-some-board-information)
- - [wifi](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#wifi-functions)
- - [TFT Display](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#tft-display-functions)
- - [Keyboard](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#keyboard-inputs)
- - [Storage](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#storage-functions)
- - [Serial](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#serial-functions)
- - [Audio](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#audio-functions)
- - [IR](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#ir-functions)
- - [Subghz](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#subghzrf-functions)
- - [Badusb](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#badusb-functions)
+ - [wifi](https://github.com/pr3y/Bruce/wiki/Interpreter/#wifi-functions)
+ - [TFT Display](https://github.com/pr3y/Bruce/wiki/Interpreter/#tft-display-functions)
+ - [Keyboard](https://github.com/pr3y/Bruce/wiki/Interpreter/#keyboard-inputs)
+ - [Storage](https://github.com/pr3y/Bruce/wiki/Interpreter/#storage-functions)
+ - [Serial](https://github.com/pr3y/Bruce/wiki/Interpreter/#serial-functions)
+ - [Audio](https://github.com/pr3y/Bruce/wiki/Interpreter/#audio-functions)
+ - [IR](https://github.com/pr3y/Bruce/wiki/Interpreter/#ir-functions)
+ - [Subghz](https://github.com/pr3y/Bruce/wiki/Interpreter#subghzrf-functions)
+ - [Badusb](https://github.com/pr3y/Bruce/wiki/Interpreter#badusb-functions)
 
 
 ## General
