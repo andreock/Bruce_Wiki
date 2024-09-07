@@ -128,11 +128,11 @@ API Reference for Native Functions Accessible from JS:
 
 ### `wifiScan()`
 
-**Description**: Disconnect current wifi network and scan for available networks.
+**Description**: scan for available wifi networks. Also disconnect from current wifi network to perform the scan.
 
-**Returns**: `object`: An object array with 2 properties:
+**Returns**: `object`: An object array with 3 properties:
   - `SSID` (string): The network name.
-  - `encryptionType` (string): The network encryptionType. Possible values: "UNKNOWN", "TKIP/WPA", "WEP","CCMP/WPA","NONE","AUTO"
+  - `encryptionType` (string): The network encryptionType. Possible values: `"UNKNOWN", "TKIP/WPA", "WEP","CCMP/WPA","NONE","AUTO"`
   - `MAC` (string): The AP MAC address.
 
 ---
