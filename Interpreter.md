@@ -209,6 +209,215 @@ Bellow you can find some of the
 
 ---
 
+### `drawLine(x: number, y: number, x2: number, y2: number, color: number)`
+
+**Description**: Draws a line with the specified parameters.
+
+**Parameters**:
+
+- `x` (number): The x-coordinate of the top-left corner.
+- `y` (number): The y-coordinate of the top-left corner.
+- `x2` (number): The x-coordinate of the bottom-right corner.
+- `y2` (number): The y-coordinate of the bottom-right corner.
+- `color` (number): The color value in 16-bit RGB format.
+
+**Returns**: `void`
+
+---
+
+### `drawPixel(x: number, y: number, color: number)`
+
+**Description**: Draws a single pixel on screen.
+
+**Parameters**:
+
+- `x` (number): The x-coordinate of the pixel.
+- `y` (number): The y-coordinate of the pixel.
+- `color` (number): The color value in 16-bit RGB format.
+
+**Returns**: `void`
+
+
+### `fillScreen(color: number)`
+
+**Description**: Fill the screen with the specified color.
+
+**Parameters**:
+
+- `color` (number): The color value in 16-bit RGB format.
+
+**Returns**: `void`
+
+---
+
+### `dialogMessage(msg : string)`
+
+**Description**: Show a message dialog.
+
+**Parameters**:
+
+- `msg` (string): The message text.
+
+**Returns**: `void`
+
+---
+
+### `dialogError(msg : string)`
+
+**Description**: Show an error message dialog.
+
+**Parameters**:
+
+- `msg` (string): The message text.
+
+**Returns**: `void`
+
+---
+
+### `dialogPickFile(path : string)`
+
+**Description**: Show a file picker dialog.
+
+**Parameters**:
+
+- `path` (string): Root path (optional, defaults to SDcard root if unspecified)
+
+**Returns**: `string`. Selected file full path, or empty string if cancelled.
+
+---
+
+### `dialogViewFile(path : string)`
+
+**Description**: Show a file viewer dialog.
+
+**Parameters**:
+
+- `path` (string): file pathname to view.
+
+**Returns**: `void`
+
+---
+
+### `keyboard(title : string, maxlen : number, initval : string)`
+
+**Description**: Show a text input dialog.
+
+**Parameters**:
+
+- `title` (string): dialog title (optional).
+- `maxlen` (number): max input string lenght (optional).
+- `initval` (string): initial text field value (optional).
+
+**Returns**: `string`. Typed string, or empty string if cancelled.
+
+---
+
+## Storage functions
+
+### `storageRead(filename : string) : string`
+
+**Description**: Read a small text file.
+
+**Parameters**:
+
+- `filename` (string): file pathname to read.
+
+**Returns**: `string`. File contents, or empty string if not found or any other error.
+
+---
+
+
+### `storageWrite(filename : string, data : string)`
+
+**Description**: Write a small text file.
+
+
+**Returns**: `boolean`: Returns `true` if successfull or `false` if failed
+
+---
+
+## Serial functions
+
+### `serialReadln(timeout_in_ms : number)`
+
+**Description**: Read a single line from the serial terminal;
+
+**Parameters**:
+
+- `timeout_in_ms` (number): timeout in milli-seconds. Defaults to 10s if unspecified.
+
+**Returns**: `string`: Returns the line received
+
+---
+
+### `serialCmd(cmd : string)`
+
+**Description**: Execute a supported serial command (see the [list here](https://github.com/pr3y/Bruce/wiki/Serial));
+
+**Parameters**:
+
+- `cmd` (string): serial command to execute.
+
+**Returns**: `boolean`: Returns `true` if successfull or `false` if command failed
+
+---
+
+## Audio functions
+
+### `playAudioFile(filename : string)`
+
+### `tone(frequency : number, duration : number)`
+
+---
+
+## IR functions
+
+### `irTransmitFile(filename : string)`
+
+### `irRead(timeout_in_seconds : number) : string`
+
+### `irReadRaw(timeout_in_seconds : number) : string`
+
+---
+
+## SubGhz/RF functions
+
+### `subghzTransmitFile(filename : string)`
+
+### `subghzRead(timeout_in_seconds : number) : string`
+
+### `subghzReadRaw(timeout_in_seconds : number) : string`
+
+### `subghzSetFrequency(freq : float)`
+
+---
+
+## Badusb functions (ESP32S3 only)
+
+### `badusbSetup()`
+
+### `badusbRunFile(filename : string)`
+
+### `badusbPrint(msg : string)`
+
+### `badusbPrintln(msg : string)`
+
+### `badusbPress(keycode : number)`
+
+[keycodes list](https://github.com/espressif/arduino-esp32/blob/master/libraries/USB/src/USBHIDKeyboard.h)
+
+### `badusbHold(keycode : number)`
+
+### `badusbRelease(keycode : number)`
+
+### `badusbReleaseAll()`
+
+### `badusbPressRaw(hid_key : number)`
+
+[TinyUSB's HID_KEY_* macros](https://github.com/hathach/tinyusb/blob/master/src/class/hid/hid.h)
+
+---
+
 ## Keyboard Inputs
 
 ### `getPrevPress()`
@@ -223,6 +432,7 @@ Bellow you can find some of the
 **Returns**: `boolean`: Returns `true` if pressed and `false` if not pressed
 
 ---
+
 ### `getNextPress()`
 **Description**: Return the current state of 'Next' button;
 
@@ -237,11 +447,3 @@ Bellow you can find some of the
 **Returns**: `string[]`: An array of strings representing the pressed keys. Possible values include "Delete", "Enter", "Alt", "Tab", "Function", "Option", or the actual key character.
 
 ---
-## ToDo
-### Send IR command
-
-### Send RF command
-
-### Send BadUSB payload
-
-### 
