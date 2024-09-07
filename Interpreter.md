@@ -108,6 +108,8 @@ API Reference for Native Functions Accessible from JS:
 
 ---
 
+### `wifiConnect(ssid : string)`
+### `wifiConnect(ssid : string, timeout_in_seconds : number)`
 ### `wifiConnect(ssid : string, timeout_in_seconds : number, pwd : string)`
 
 **Description**: Connects to the specified wifi network (without opening any menu).
@@ -137,6 +139,7 @@ API Reference for Native Functions Accessible from JS:
 
 ---
 
+### `httpGet(url: string)`
 ### `httpGet(url: string, headers: string[])`
 
 **Description**: Performs an HTTP GET request to the specified URL. Optionally includes headers.
@@ -340,6 +343,9 @@ API Reference for Native Functions Accessible from JS:
 
 ---
 
+### `keyboard()`
+### `keyboard(title : string)`
+### `keyboard(title : string, maxlen : number)`
 ### `keyboard(title : string, maxlen : number, initval : string)`
 
 **Description**: Show a text input dialog.
@@ -453,6 +459,7 @@ API Reference for Native Functions Accessible from JS:
 
 ### `playAudioFile(filename : string)`
 
+### `tone(frequency : number)`
 ### `tone(frequency : number, duration : number)`
 
 ---
