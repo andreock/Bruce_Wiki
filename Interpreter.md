@@ -9,6 +9,7 @@ Bellow you can find some of the
 
 ## API Reference for Native Functions Accessible from JS
 
+ - [General](https://github.com/pr3y/Bruce/wiki/Interpreter#general)
  - [Board info](https://github.com/pr3y/Bruce/wiki/Interpreter#get-some-board-information)
  - [wifi](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#wifi-functions)
  - [TFT Display](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#tft-display-functions)
@@ -21,23 +22,14 @@ Bellow you can find some of the
  - [Badusb](https://github.com/pr3y/Bruce/wiki/Interpreter/_edit#badusb-functions)
 
 
+## General
+
 ### `load(script: string)`
 
 **Description**: Sets the script to be executed next when the current script ends. 
 
 **Parameters**:
 - `script` (string): The JavaScript code as a string to be loaded.
-
-**Returns**: `void`
-
----
-
-### `print(message: string)`
-
-**Description**: Prints the given message to the Serial monitor.
-
-**Parameters**:
-- `message` (string): The message to print.
 
 **Returns**: `void`
 
@@ -85,7 +77,9 @@ Bellow you can find some of the
 **Returns**: `void`
 
 ---
+
 ## Get some board information
+
 ### `getBattery`
 **Description**: Get and integer from 0 to 100 relative to the battery level.
 
@@ -385,6 +379,16 @@ Bellow you can find some of the
 ---
 
 ## Serial functions
+
+### `print(message: string)`
+
+**Description**: Prints the given message to the Serial monitor.
+
+**Parameters**:
+- `message` (string): The message to print.
+
+**Returns**: `void`
+
 
 ### `serialReadln(timeout_in_ms : number)`
 
