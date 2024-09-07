@@ -100,11 +100,11 @@ API Reference for Native Functions Accessible from JS:
 
 ---
 ## WiFi functions
-### `wifiConnect`
+### `wifiConnect()`
 **Description**: Open Bruce WiFi connection menu.
 
 ---
-### `wifiDisconnect`
+### `wifiDisconnect()`
 **Description**: Disconnect Wifi.
 
 ---
