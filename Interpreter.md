@@ -10,7 +10,7 @@ API Reference for Native Functions Accessible from JS:
 
  - [General](https://github.com/pr3y/Bruce/wiki/Interpreter#general)
  - [Board info](https://github.com/pr3y/Bruce/wiki/Interpreter#get-some-board-information)
- - [wifi](https://github.com/pr3y/Bruce/wiki/Interpreter#wifi-functions)
+ - [Wifi](https://github.com/pr3y/Bruce/wiki/Interpreter#wifi-functions)
  - [TFT Display](https://github.com/pr3y/Bruce/wiki/Interpreter#tft-display-functions)
  - [Keyboard](https://github.com/pr3y/Bruce/wiki/Interpreter#keyboard-inputs)
  - [Storage](https://github.com/pr3y/Bruce/wiki/Interpreter#storage-functions)
@@ -101,18 +101,42 @@ API Reference for Native Functions Accessible from JS:
 ---
 ## WiFi functions
 
-### `wifiConnect(ssid : string, timeout_in_seconds : number, pwd : string)`
-
-### `wifiScan()`
 
 ### `wifiConnectDialog()`
+
 **Description**: Open Bruce WiFi connection menu.
 
 ---
+
+### `wifiConnect(ssid : string, timeout_in_seconds : number, pwd : string)`
+
+**Description**: Connects to the specified wifi network (without opening any menu).
+
+**Parameters**:
+- `ssid` (string): Network name.
+- `timeout_in_seconds` (number): retry connecting. Defaults to 10 seconds if unspecified.
+- `pwd` (string): Network password (optional for open networks)
+
+**Returns**: boolean. Returns `true` if connection was successful, `false` otherwise.
+
+---
 ### `wifiDisconnect()`
+
 **Description**: Disconnect Wifi.
 
 ---
+
+### `wifiScan()`
+
+**Description**: Disconnect current wifi network and scan for available networks.
+
+**Returns**: `object`: An object array with 2 properties:
+  - `SSID` (string): The network name.
+  - `encryptionType` (string): The network encryptionType. Possible values: "UNKNOWN", "TKIP/WPA", "WEP","CCMP/WPA","NONE","AUTO"
+  - `MAC` (string): The AP MAC address.
+
+---
+
 ### `httpGet(url: string, headers: string[])`
 
 **Description**: Performs an HTTP GET request to the specified URL. Optionally includes headers.
