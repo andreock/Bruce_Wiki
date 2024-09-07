@@ -215,10 +215,10 @@ Bellow you can find some of the
 
 **Parameters**:
 
-- `x` (number): The x-coordinate of the top-left corner.
-- `y` (number): The y-coordinate of the top-left corner.
-- `x2` (number): The x-coordinate of the bottom-right corner.
-- `y2` (number): The y-coordinate of the bottom-right corner.
+- `x` (number): The x-coordinate of the starting point.
+- `y` (number): The y-coordinate of the starting point.
+- `x2` (number): The x-coordinate of the final point.
+- `y2` (number): The y-coordinate of the final point.
 - `color` (number): The color value in 16-bit RGB format.
 
 **Returns**: `void`
@@ -329,8 +329,13 @@ Bellow you can find some of the
 
 ### `storageWrite(filename : string, data : string)`
 
-**Description**: Write a small text file.
+**Description**: Write a small text file. Append if file exist.
 
+
+**Parameters**:
+
+- `filename` (string): path of the file to write.
+- `data` (string): string to write.
 
 **Returns**: `boolean`: Returns `true` if successfull or `false` if failed
 
