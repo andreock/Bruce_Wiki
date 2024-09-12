@@ -6,6 +6,8 @@ Some changes were made and some new functions were added, and more are to be add
 
 Some [example scripts are here](https://github.com/pr3y/Bruce/tree/main/sd_files/interpreter).
 
+For easier development, you can use [this bash script to upload code directly via serial](https://github.com/eadmaster/Bruce/blob/53090dabfdfb1ed19314b99abb441961c29469b2/bin/bruceserialrun).
+
 API Reference for Native Functions Accessible from JS:
 
  - [General](https://github.com/pr3y/Bruce/wiki/Interpreter#general)
