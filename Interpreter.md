@@ -79,14 +79,6 @@ API Reference for Native Functions Accessible from JS:
 
 ---
 
-### `exit()`
-
-**Description**: Exit from the current script.
-
-**Returns**: `void`
-
----
-
 ## Get some board information
 
 ### `getBattery`
