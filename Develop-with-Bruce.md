@@ -36,7 +36,7 @@ src/
 
 ## Dependencies
 
-If you need to install a new library, you have to choices:
+If you need to install a new library, you have two choices:
 1. use `pio` package manager
 2. add your custom library in `lib/`
 
