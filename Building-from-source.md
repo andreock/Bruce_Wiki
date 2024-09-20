@@ -52,17 +52,22 @@ bash build.sh
 ```
 
 # Windows build
+* Install [Git](https://git-scm.com/download/win)
+* Install Python using the Microsoft Store
 * Install VSCode
 * Download the repository and extract it somewhere you want
 * Within VSCode, `File>Open Folder...` and select the folder of the firmware
-* If it doesn't prompt to install Platformio, click on "Extentions" (4 swares icon on the left) and install Platformio
-* After the Platformio Icon. On `Project Tasks` select `Default` and click in `Build All` an WAIT!!
+* If it doesn't prompt to install Platformio, click on "Extentions" (4 swares icon on the left) and install Platformio (and restart VsCode)
+* In the Status bar (down on the screen) click where is written `Default (Bruce-main)`
+* A little Menu will appear in the Search bar (up on screen), select your device "env"
+* Now click in the :heavy_check_mark: Icon in the Status Bar (beside the cute little House), it will start building your project
+* if you want to upload directly, you can do it clicking in the "->" arrow to upload to your device
 
-**This step may take several minutes depending of your computer, and will FAIL at the end, but this is an IMPORTANT STEP!!**
-* you will have the following error for all envs: `:\Users\<Your user>\AppData\Local\Arduino15\packages\m5stack\hardware\esp32\2.1.1/tools/sdk/esp32s3/lib\libnet80211.a(ieee80211_output.o): in function `ieee80211_raw_frame_sanity_check': (.text.ieee80211_raw_frame_sanity_check+0x5c): multiple definition of `ieee80211_raw_frame_sanity_check'; `
-* Now Close VSCode
-* Go to the Bruce folder and run the file "deauth_setup.bat", it will patch the Arduino-Esp32 framework
-* Open VSCode, on `Project Tasks` select `Default` and click in `Build All` an wait, now it should build with **SUCCESS!!**
+At this point you must have Pythons installed, probably PIP is installed too, if not, install it, because now its time to install Esptool
+* Open the Bruce folder with Windows Explorer
+* Click in the address bar, as if to edit it, delete all, type `cmd` and hit Enter, it´ll open the command prompt (windows terminal?) at the project folder
+* install esptool `pip install esptool`
+* now run "build.bat" and it will merge the bin files into one, so you can upload to your device with `esptool --port COMx write_flash 0x0 Bruce3_<yourboard>.bin` or `python -m esptool --port COMx write_flash 0x0 Bruce3_<yourboard>.bin`
 
 
 # Github
