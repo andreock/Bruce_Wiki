@@ -13,7 +13,7 @@
 ## Prerequisites
 
 First you need to clone the repository and build Bruce from sources. You will find the documentation here:
-1. [optionnal] but recommended: work from a [Python virtualenv](https://github.com/pyenv/pyenv-virtualenv)
+1. [optional] but recommended: work from a [Python virtualenv](https://github.com/pyenv/pyenv-virtualenv)
 2. [build your firmware](https://github.com/pr3y/Bruce/wiki/Building-from-source)
 3. [install your build](https://github.com/pr3y/Bruce/wiki/Installing)
 
@@ -47,7 +47,7 @@ pio pkg search mylib
 pio pkg install -l mylib
 ```
 
-**Warning**: do not commit the `platform.io` auto generated file. Instead add your lib in the adequat section of the file. Or ask on the Discord where to write it. 
+**Warning**: do not commit the `platform.io` auto generated file. Instead add your lib in the adequate section of the file. Or ask on the Discord where to write it. 
 
 **Custom library**
 Simply put your lib in `lib/mylib'. Then you can import it with:
