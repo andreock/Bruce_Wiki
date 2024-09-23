@@ -325,6 +325,17 @@ API Reference for Native Functions Accessible from JS:
 
 ---
 
+### `dialogChoice(choices : string[])`
+
+**Description**: Show a dialog with multiple choices.
+
+**Parameters**:
+
+- `choices`: an all the choices to show.  Choices should be provided as key-value pairs in the array. Example: `[ "choice1": "return_val1", "choice2": "return_val2", ...]`
+
+**Returns**: `string`. Selected choice value, or empty string if cancelled.
+
+
 ### `dialogViewFile(path : string)`
 
 **Description**: Show a file viewer dialog.
