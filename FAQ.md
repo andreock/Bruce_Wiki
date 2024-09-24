@@ -14,7 +14,7 @@ For the WebUI, username=`admin`, password=`bruce`
 # IR/RF transmitter/receiver not working?
 
  - [IR requires a line-of-sight between the transmitter and the receiver](https://www.quora.com/Does-an-IR-remote-need-a-line-of-sight), which can be easily blocked by solid objects. [Other IR light sources like the sun can also cause interferences](https://www.garagedoordoctorllc.com/can-sunlight-exposure-affect-garage-door-sensors/).
- [Solid objects can also block RF signals](https://jemengineering.com/blog-5-ways-physical-objects-impact-rf-signals/), especially if made of metal. Also, some nearby transmitters may cause interferences even if not using the exact same frequency.
+ [Solid objects can also block RF signals](https://jemengineering.com/blog-5-ways-physical-objects-impact-rf-signals/), especially if made of metal.
  - try putting the transmitter and receiver closer (<10cm), many cheap modules have poor ranges, or may be too noisy.
  - if using unofficially supported modules, double-check that the used pins are correct. These can be [changed in the Settings](https://www.youtube.com/watch?v=i4wRNeGQJfw).
  - check if the module is active and working during transmission:
