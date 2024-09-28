@@ -22,6 +22,12 @@ Other methods to run badusb scripts:
 2. remotely via the WebUI, click on the [antenna-like button next to the file](https://github.com/pr3y/Bruce/pull/124)
 4. via a [serial cmd](https://github.com/pr3y/Bruce/wiki/Serial) like `badusb tx_from_file HelloWorld.txt`
 
+### Using Bad USB on StickCs and Core/Core2 devices
+You will need to use a CG9329 module such as [this ](https://pt.aliexpress.com/item/1005006680094576.html) or [this ](https://pt.aliexpress.com/item/1005007031564072.html) to run the Bad USB in your device, wiring it into the Grove connector like this:
+
+![Sem título](https://github.com/user-attachments/assets/adb6a8f8-e655-4007-85d6-9f1560b7aedf)
+
+
 ## Led control
 Control ESP32 S3 Stamp RGB LED, with the options purple, white, red, green and blue to extra style, also led flash blinks the LED.
 
@@ -32,6 +38,7 @@ To create pub.key file you should run this in bash:
 ```sh
 base64 -d <<< "your_base64_public_key"|tee pub.key
 ```
+![Sem título](https://github.com/user-attachments/assets/adb6a8f8-e655-4007-85d6-9f1560b7aedf)
 
 ## Interpreter
 Head over to the [Interpreter Section](https://github.com/pr3y/Bruce/wiki/Interpreter).
