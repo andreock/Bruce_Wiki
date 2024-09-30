@@ -38,7 +38,6 @@ To create pub.key file you should run this in bash:
 ```sh
 base64 -d <<< "your_base64_public_key"|tee pub.key
 ```
-![Sem título](https://github.com/user-attachments/assets/adb6a8f8-e655-4007-85d6-9f1560b7aedf)
 
 ## Interpreter
 Head over to the [Interpreter Section](https://github.com/pr3y/Bruce/wiki/Interpreter).
