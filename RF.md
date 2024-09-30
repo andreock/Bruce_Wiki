@@ -8,6 +8,9 @@
 - **[FS1000A transmitter + XY-MK-5V receiver](https://components101.com/modules/433-mhz-rf-transmitter-module)** (also sold with other names)  -> fixed frequency (usually 433MHz), only ASK/OOK modulation
 - other single-pinned modules ([comparison](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html))
 
+![RF-Pins](https://github.com/user-attachments/assets/03e7290c-5219-4b80-b146-89cd2a814204)
+
+
 **NOTE: some have poor ranges**, may need to mod the antenna to get a better range.
 
 default pins: `Tx=GROVE_SDA`, `Rx=GROVE_SCL` 
