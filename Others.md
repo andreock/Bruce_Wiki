@@ -23,9 +23,9 @@ Other methods to run badusb scripts:
 4. via a [serial cmd](https://github.com/pr3y/Bruce/wiki/Serial) like `badusb tx_from_file HelloWorld.txt`
 
 ### Using Bad USB on StickCs and Core/Core2 devices
-You will need to use a CG9329 module such as [this ](https://pt.aliexpress.com/item/1005006680094576.html) or [this ](https://pt.aliexpress.com/item/1005007031564072.html) to run the Bad USB in your device, wiring it into the Grove connector like this:
+You will need to use a CH9329 module such as [this ](https://pt.aliexpress.com/item/1005006680094576.html) or [this ](https://pt.aliexpress.com/item/1005007031564072.html) to run the Bad USB in your device, wiring it into the Grove connector like this:
 
-![Sem título](https://github.com/user-attachments/assets/adb6a8f8-e655-4007-85d6-9f1560b7aedf)
+![CH3929](https://github.com/user-attachments/assets/1af21925-728e-4086-aa8d-f29a932fb3a1)
 
 
 ## Led control
