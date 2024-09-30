@@ -12,7 +12,7 @@ It need to be previusly paired to the device to work, and once you Disconnect BL
 Use media commands to control your Smartphone media, taking screenshots, play/pause songs, stop, etc..
 
 ## NRF24 Jammer
-Powerfull 2.4Ghz Jammer, with the NRF24 Module, on SD Card Sniffer or directly connected to the M5StickC
+Powerfull 2.4Ghz Jammer, with the NRF24 Module, on SD Card Sniffer or directly connected to the M5StickC (watch the [tutorial here](https://youtu.be/RVQrfghGVqw))
 It uses the same GPIO from [cc1101 in Cardputer](https://github.com/pr3y/Bruce/wiki/CC1101#cardputer)
 
 ![nrf24](https://github.com/user-attachments/assets/afe10f16-b040-441e-90d6-131e18c67642)
