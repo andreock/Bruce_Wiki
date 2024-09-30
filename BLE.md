@@ -1,8 +1,15 @@
+## Disconnect (if BLE is active)
+do I need to explain that?
+
 ## BLE Scan
 Scan for BLE devices nearby.
 
 ## BadBLE
-emulate a keyboard and deploy DuckyScripts 
+Emulate a keyboard and deploy DuckyScripts in your devices.
+It need to be previusly paired to the device to work, and once you Disconnect BLE, you need to Restart the device to use again.
+
+## Media Cmds
+Use media commands to control your Smartphone media, taking screenshots, play/pause songs, stop, etc..
 
 ## NRF24 Jammer
 Powerfull BLE Jammer with the NRF24 Module on SD Card Sniffer.
