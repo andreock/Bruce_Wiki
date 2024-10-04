@@ -24,11 +24,12 @@ For the WebUI, username=`admin`, password=`bruce`
  - most RF modules only supports the 433MHz frequency with ASK/OOK modulation. Check if your `.sub` file or source signal is compatible.
  - check the [serial log](https://github.com/pr3y/Bruce/wiki/Serial) for errors, some signals may [fail to decode](https://github.com/pr3y/Bruce/issues/216).
 
-# Port to non-M5Stack boards? 
+# Port to non-M5Stack boards? CYD?
 
 Not officially supported.
 
-For boards that do not have screen and buttons, an [headless mode was added](https://github.com/pr3y/Bruce/issues/107).
+For boards that do not have screen and buttons, an [headless mode was added with limited features](https://github.com/pr3y/Bruce/issues/107).
+
 For this to work, you have to manually add a new target in the [platformio.ini](https://github.com/pr3y/Bruce/blob/main/platformio.ini), and then define the pins and features for the modules you have connected.
 Then, [compile the firmware for your new target](https://github.com/pr3y/Bruce/wiki/Building-from-source).
 
