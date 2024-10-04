@@ -33,7 +33,7 @@ For boards that do not have screen and buttons, an [headless mode was added](htt
 For this to work, you have to manually add a new [configuration environment](https://docs.platformio.org/en/latest/projectconf/sections/env/index.html) in the [platformio.ini](https://github.com/pr3y/Bruce/blob/main/platformio.ini), and then define the pins and features for the modules you have connected.
 Then, [compile the firmware for your new target](https://github.com/pr3y/Bruce/wiki/Building-from-source).
 
-A sample env for the esp32-s3-devkitc-1 is [defined here](https://github.com/pr3y/Bruce/blob/3813139ae0fc220180e7d443d4d6caea3e689224/platformio.ini#845), it should work for all ESP32-S3 boards with 8MB PSRAM.
+A sample env for the [esp32-s3-devkitc-1 board](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html) is [defined here](https://github.com/pr3y/Bruce/blob/3813139ae0fc220180e7d443d4d6caea3e689224/platformio.ini#845), it should work for all ESP32-S3 boards with 8MB PSRAM.
 
 
 # What kind of files i need to put on the SD card?
