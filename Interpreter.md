@@ -349,17 +349,17 @@ API Reference for Native Functions Accessible from JS:
 ---
 
 ### `keyboard()`
-### `keyboard(title : string)`
-### `keyboard(title : string, maxlen : number)`
-### `keyboard(title : string, maxlen : number, initval : string)`
+### `keyboard(initval : string)`
+### `keyboard(initval : string, maxlen : number)`
+### `keyboard(initval : string, maxlen : number,  title : string)`
 
 **Description**: Show a text input dialog.
 
 **Parameters**:
 
-- `title` (string): dialog title (optional).
-- `maxlen` (number): max input string lenght (optional).
 - `initval` (string): initial text field value (optional).
+- `maxlen` (number): max input string lenght (optional).
+- `title` (string): dialog title (optional).
 
 **Returns**: `string`. Typed string, or empty string if cancelled.
 
