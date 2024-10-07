@@ -1,10 +1,12 @@
 ## Manual for Coding in JavaScript to Bruce
 
-This secction was ported from [justinknight93/Doolittle](https://github.com/justinknight93/Doolittle), who made a very nice job with its JavaScript interpreter
+This section was ported from [justinknight93/Doolittle](https://github.com/justinknight93/Doolittle), who made a very nice job with its JavaScript interpreter
 
 Some changes were made and some new functions were added, and more are to be add.
 
 Some [example scripts are here](https://github.com/pr3y/Bruce/tree/main/sd_files/interpreter).
+
+You can copy your favourite scripts in the `/scripts` folder and have them listed in the ["Scripts" menu](https://github.com/pr3y/Bruce/issues/258).
 
 For easier development, you can use [this bash script to upload code directly via serial](https://github.com/eadmaster/Bruce/blob/53090dabfdfb1ed19314b99abb441961c29469b2/bin/bruceserialrun).
 
