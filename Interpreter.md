@@ -369,6 +369,14 @@ API Reference for Native Functions Accessible from JS:
 
 ## Keyboard Inputs
 
+### `getAnyPress()`
+
+**Description**: check if any key/button is pressed;
+
+**Returns**: `boolean`: Returns `true` if any key/button is pressed, or `false` otherwise.
+
+---
+
 ### `getPrevPress()`
 **Description**: Return the current state of 'Previous' button;
 
