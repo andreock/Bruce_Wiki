@@ -24,11 +24,11 @@ RF signals propagate in all directions and does not require a line of sight, but
  - most RF modules only supports the 433MHz frequency with ASK/OOK modulation. Check if your `.sub` file or source signal is compatible.
  - check the [serial log](https://github.com/pr3y/Bruce/wiki/Serial) for errors, some signals may [fail to decode](https://github.com/pr3y/Bruce/issues/216).
 
-# Port to non-M5Stack boards? CYD?
+# Port to other boards?
 
 Not officially supported.
 
-For boards that do not have screen and buttons, an [headless mode was added](https://github.com/pr3y/Bruce/issues/107). Headless boards can be controlled via the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui) and [serial commands](https://github.com/pr3y/Bruce/wiki/Serial), and only expose a subset of the Bruce features.
+For boards that do not have screen and buttons, an [headless mode was added](https://github.com/pr3y/Bruce/issues/107). Headless boards can be controlled via the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui) and [serial commands](https://github.com/pr3y/Bruce/wiki/Serial), and provides only a subset of all the Bruce features.
 
 For these boards you have to manually add a new [configuration environment](https://docs.platformio.org/en/latest/projectconf/sections/env/index.html) in the [platformio.ini](https://github.com/pr3y/Bruce/blob/main/platformio.ini), and then define the pins and features for the modules you have connected.
 Then, [compile the firmware for your new env](https://github.com/pr3y/Bruce/wiki/Building-from-source).
