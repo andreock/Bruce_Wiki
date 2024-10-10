@@ -25,7 +25,7 @@ RF signals propagate in all directions and does not require a line of sight, but
  - check the [serial log](https://github.com/pr3y/Bruce/wiki/Serial) for errors, some signals may [fail to decode](https://github.com/pr3y/Bruce/issues/216).
 
 
-# Feature X is missing of my board?
+# Feature X is missing in my device?
 
 Check the [table here](https://github.com/pr3y/Bruce#specific-functions-per-device-the-ones-not-mentioned-here-are-available-to-all).
 
@@ -34,13 +34,12 @@ e.g. BadUSB is only available on ESP32-S3-based devices.
 
 # Port to other boards?
 
-For unsupported boards you have to manually add a new [configuration environment](https://docs.platformio.org/en/latest/projectconf/sections/env/index.html) in the [platformio.ini](https://github.com/pr3y/Bruce/blob/main/platformio.ini), and then define the pins and features for the modules you have connected.
+For unsupported boards you have to manually add a new [configuration environment](https://docs.platformio.org/en/latest/projectconf/sections/env/index.html) in the [platformio.ini](https://github.com/pr3y/Bruce/blob/main/platformio.ini), and define the pins and features for the modules you have connected.
 Then, [compile the firmware for your new env](https://github.com/pr3y/Bruce/wiki/Building-from-source).
 
-For boards that do not have screen and buttons, an [headless mode was added](https://github.com/pr3y/Bruce/issues/107). Headless boards can be controlled via the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui) and [serial commands](https://github.com/pr3y/Bruce/wiki/Serial), and provides only a subset of all the Bruce features.
+For boards that do not have a display and buttons, an [headless mode was added](https://github.com/pr3y/Bruce/issues/107). Headless boards can be controlled via the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui) and [serial commands](https://github.com/pr3y/Bruce/wiki/Serial), and provides only a subset of all the Bruce features.
 
 A sample env for the [esp32-s3-devkitc-1 board](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html) is [defined here](https://github.com/pr3y/Bruce/blob/3813139ae0fc220180e7d443d4d6caea3e689224/platformio.ini#L845), it should work with all ESP32-S3 boards with 8MB PSRAM.
-
 
 
 # What kind of files i need to put on the SD card?
