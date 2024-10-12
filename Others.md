@@ -20,7 +20,7 @@ Other methods to run badusb scripts:
 
 1. via the SDCard/LittleFS file manager in the "Others" menu (select a `.txt` file)
 2. remotely via the WebUI, click on the [antenna-like button next to the file](https://github.com/pr3y/Bruce/pull/124)
-4. via a [serial cmd](https://github.com/pr3y/Bruce/wiki/Serial) like `badusb tx_from_file HelloWorld.txt`
+3. via a [serial cmd](https://github.com/pr3y/Bruce/wiki/Serial) like `badusb run_from_file HelloWorld.txt`
 
 ### Using Bad USB on StickCs and Core/Core2 devices
 You will need to use a CH9329 module such as [this ](https://pt.aliexpress.com/item/1005006680094576.html) or [this ](https://pt.aliexpress.com/item/1005007031564072.html) to run the Bad USB in your device, wiring it into the Grove connector like this:
