@@ -35,11 +35,11 @@ e.g. BadUSB is only available on ESP32-S3-based devices.
 # Port to other boards?
 
 For unsupported boards you have to manually add a new [configuration environment](https://docs.platformio.org/en/latest/projectconf/sections/env/index.html) in the [platformio.ini](https://github.com/pr3y/Bruce/blob/main/platformio.ini), and define the pins for the modules to be connected, buttons and LCD.
-Then, [compile the firmware for your new env](https://github.com/pr3y/Bruce/wiki/Building-from-source).
+Then, [compile the firmware for your new env](https://github.com/pr3y/Bruce/wiki/Building-from-source). Depending on the board more code changes may be needed.
 
-For boards that do not have a display and buttons, an [headless mode was added](https://github.com/pr3y/Bruce/issues/107). Headless boards can be controlled only via the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui) and [serial commands](https://github.com/pr3y/Bruce/wiki/Serial), and provides a subset of all the Bruce features.
+For boards that do not have a display and buttons, an [headless mode was added](https://github.com/pr3y/Bruce/issues/107). Headless boards can be controlled only via the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui) and [serial commands](https://github.com/pr3y/Bruce/wiki/Serial), and provide a subset of all the Bruce features.
 
-A sample env for the [esp32-s3-devkitc-1 board](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html) is [defined here](https://github.com/pr3y/Bruce/blob/3813139ae0fc220180e7d443d4d6caea3e689224/platformio.ini#L845), it should work with all headless ESP32-S3 boards.
+A sample env for the [esp32-s3-devkitc-1 board](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html) is [defined here](https://github.com/pr3y/Bruce/blob/3813139ae0fc220180e7d443d4d6caea3e689224/platformio.ini#L845), it should work with any headless ESP32-S3 boards.
 
 
 # What kind of files i need to put on the SD card?
