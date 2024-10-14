@@ -57,7 +57,7 @@ subghz tx 445533 433920000 174 10
 
 execute a badusb script (already stored on the FS):
 ```
-badusb tx_from_file HelloWorld.txt
+badusb run_from_file HelloWorld.txt
 ```
 
 set a pin in (digital) output mode (only on unused GPIO pins, using Arduino `pinMode()`):
