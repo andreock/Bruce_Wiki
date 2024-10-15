@@ -24,7 +24,7 @@ Tags that can be **cloned** are a security concern. Cloning an RFID tag involves
 - RFID 13.56MHz
   - **M5Stack [RFID2](https://docs.m5stack.com/en/unit/rfid2) module** 
   - **MFRC-522** - with the I2C module from m5stack
-  - **PN532** - through [I2C](https://github.com/pr3y/Bruce/pull/200#issuecomment-2313635167) or [SPI](https://github.com/pr3y/Bruce/pull/200#issuecomment-2313692767)
+  - **PN532** - through [I2C](https://github.com/pr3y/Bruce/blob/main/media/connections/pn532_i2c.jpg) or [SPI](https://github.com/pr3y/Bruce/blob/main/media/connections/pn532_spi.jpg)
 - RFID 125kHz
   - **RDM6300** ([Connection Schema](https://github.com/pr3y/Bruce/pull/182#issuecomment-2287692412))
 
