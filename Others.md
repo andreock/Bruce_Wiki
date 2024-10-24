@@ -2,8 +2,8 @@
 ## SD Card Mngr
 Create Folders or Rename, Copy (to SPIFFS also) and Delete files.
 
-## SPIFFS Mngr
-Delete, Copy, Rename or Read files from SPIFFS.
+## LittleFS Mngr
+Delete, Copy, Rename or Read files from LittleFS.
 
 ## WebUI
 Make you device as an AP or connect to a network to use the WebUI, with this you can manage your files on the SD card and also SPIFFS
