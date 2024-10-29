@@ -17,6 +17,9 @@ It uses the same GPIO from [cc1101 in Cardputer](https://github.com/pr3y/Bruce/w
 
 ![nrf24](https://github.com/user-attachments/assets/afe10f16-b040-441e-90d6-131e18c67642)
 
+![nrf24](https://github.com/user-attachments/assets/2e663f68-8012-4769-b75e-1d5dc3644c1a)
+(CYD Schematics thanks to @C.Oliveira)
+
 
 ## BLE Spams
 ### iOS Spams
