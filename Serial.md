@@ -17,6 +17,36 @@ Most of these commands are compatible with the [Flipper Zero CLI](https://docs.f
 - via the [WebUI](https://github.com/pr3y/Bruce/wiki/Others#webui) ["SerialCmd" button](https://github.com/pr3y/Bruce/pull/134)
 - after starting the WebUI, with `curl -XPOST "http://bruce.local/cm" -d "cmnd=say My name is Bruce"`
 
+# Reference
+
+(still incomplete)
+
+| Full command | Arguments | Description | Alias |
+| ------------ | --------- | ----------- | ----------- |
+| `ir rx` | `<timeout>` (in seconds, defaults to 10s if missing)  | Read an IR signal and print the dump on serial. | |
+| `ir rx raw` | `<timeout>` (in seconds, defaults to 10s if missing) | Read an IR signal in RAW mode and print the dump on serial.  | |
+| `ir tx` | `<protocol> <address> <decoded_value>` | Send a custom decoded IR signal.  | |
+| `ir tx_from_file` | `<ir file path>` | Send an IR signal saved in storage. | |
+| `subghz rx` | `<timeout>` (in seconds, defaults to 10s if missing)  | Read an RF signal and print the dump on serial. | `rf rx` |
+| `subghz rx raw` | `<timeout>` (in seconds, defaults to 10s if missing) | Read an RF signal in RAW mode and print the dump on serial.  | `rf rx raw` |
+| `subghz tx` | `<decoded_value> <frequency> <te> <count>` | Send a custom decoded RF signal. | `rf tx` |
+| `subghz tx_from_file` | `<sub file path>` | Send an RF signal saved in storage. | |
+| `music_player` | `<audio file path>` | Play an audio file (speaker req.). | `play` |
+| `tone` | `<frequency> <duration>`  | Play a single squarewave audio tone  (speaker req.) | beep |
+| `say` | `<text>` | Text-To-Speech (speaker req.)   |   |
+| `led` | `<r/g/b> <0-255>`    | Change UI main color  |     |
+| `power` | `<off/reboot/sleep>`    | General power management  |  |
+| `clock` |    | show the clock UI  |  |
+| `gpio mode` | `<pin number> <0/1>`    | set GPIO pins mode (0=input, 1=output).  |      |
+| `gpio set` |  `<pin number> <0/1>`  | Direct GPIO pins control (0=off, 1=on).  |      |
+| `i2c scan` |    | scan for modules connected to the I2C bus. List the results on serial. |     |
+| `storage` | `<list/remove/mkdir/rename/read/write/copy/md5/crc32>` `<file path>`   | Common file management commands. Path must always be relative to the root. Defaults to SD card if found.  |  `ls, dir, md, ren, cat, type, cp, md5, crc32` |
+| `settings` | | view all the current settings   |     | `set` |
+| `settings` | `<name>` | view a single setting value   |     | `set` |
+| `settings` | `<name> <new value>` | alter a single setting value   |     | `set` |
+| `factory_reset` |     | Reset bruce.conf to the defaults |   |
+
+
 # Examples
 
 text-to-speech (req. a speaker):
