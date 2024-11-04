@@ -32,7 +32,7 @@ Most of these commands are compatible with the [Flipper Zero CLI](https://docs.f
 | `subghz tx` | `<decoded_value> <frequency> <te> <count>` | Send a custom decoded RF signal. | `rf tx` |
 | `subghz tx_from_file` | `<sub file path>` | Send an RF signal saved in storage. | |
 | `music_player` | `<audio file path>` | Play an audio file (speaker req.). | `play` |
-| `tone` | `<frequency> <duration>`  | Play a single squarewave audio tone  (speaker req.) | beep |
+| `tone` | `<frequency> <duration>`  | Play a single squarewave audio tone  (speaker req.) | `beep` |
 | `say` | `<text>` | Text-To-Speech (speaker req.)   |   |
 | `led` | `<r/g/b> <0-255>`    | Change UI main color  |     |
 | `power` | `<off/reboot/sleep>`    | General power management  |  |
@@ -41,9 +41,9 @@ Most of these commands are compatible with the [Flipper Zero CLI](https://docs.f
 | `gpio set` |  `<pin number> <0/1>`  | Direct GPIO pins control (0=off, 1=on).  |      |
 | `i2c scan` |    | scan for modules connected to the I2C bus. List the results on serial. |     |
 | `storage` | `<list/remove/mkdir/rename/read/write/copy/md5/crc32>` `<file path>`   | Common file management commands. Path must always be relative to the root. Defaults to SD card if found.  |  `ls, dir, md, ren, cat, type, cp, md5, crc32` |
-| `settings` | | view all the current settings   |     | `set` |
-| `settings` | `<name>` | view a single setting value   |     | `set` |
-| `settings` | `<name> <new value>` | alter a single setting value   |     | `set` |
+| `settings` | | view all the current settings   | `set` |
+| `settings` | `<name>` | view a single setting value   | `set` |
+| `settings` | `<name> <new value>` | alter a single setting value   | `set` |
 | `factory_reset` |     | Reset bruce.conf to the defaults |   |
 
 
