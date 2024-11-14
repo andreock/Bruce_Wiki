@@ -1,1 +1,1 @@
-🦈 Bruce - Predatory Firmware[ds[d[sd[s[ds[d
+🦈 Bruce - Predatory Firmware
