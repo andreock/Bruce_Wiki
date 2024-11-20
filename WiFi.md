@@ -36,3 +36,9 @@ Does a arp scan on current network based on the mask (equivalent to arp -a), aft
 ## Wireguard Tunneling
 To be able to connect to a wireguard tunnel with your cardputer easily, you need to have your .conf file and place on the SD card root directory called "wg.conf"
 If you don't know how to generate a .conf file for wireguard [read here](https://www.wireguard.com/quickstart/) 
+
+## Brucegotchi
+This feature does a lot of things at the same time, such as:
+- Pwngrid spam
+- Deauth nearby WiFi networks in different channels
+- Collect and save HandShakes (EAPOL)
