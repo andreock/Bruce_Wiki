@@ -15,7 +15,7 @@ Connect to TelNet servers and execute remote commands.
 Connect to SSH servers and execute remote commands.
 
 ## RAW Sniffer
-Saves .pcap to SD card with raw monitoring info everytime every 10 seconds.
+Saves .pcap to SD card with raw monitoring, you can also select for it to save only EAPOL HandShakes also.
 
 ## DPWO-ESP32
 Searches for default credentials for some router operators [more info here](https://github.com/caioluders/DPWO)
