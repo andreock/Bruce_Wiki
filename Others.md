@@ -9,6 +9,9 @@ Delete, Copy, Rename or Read files from LittleFS.
 Make you device as an AP or connect to a network to use the WebUI, with this you can manage your files on the SD card and also SPIFFS
 Before setting up, you need to access http://bruce.local with the credentials on screen to have access to the manager.
 
+## GPS Tracker
+Use a GPS module to track the device. It creates a .gpx file that can be uploaded to online gpx viewers like [GPX Studio](https://gpx.studio/app) and [GPS Visualizer](https://www.gpsvisualizer.com/) or to any gpx viewer app to view the route on a map.
+
 ## BadUSB
 
 Only DuckyScript payloads are supported!! for more info on creating your own DuckyScripts [read here](https://docs.hak5.org/hak5-usb-rubber-ducky/ducky-script-basics/hello-world)
