@@ -38,6 +38,6 @@ If there is no `bruce.conf` file on the SD card, Bruce will create this simple j
 ```
 
 Which will be used to persist the information between boots and even to M5Launcher when you finish running other applications that sometimes reuse EEPROM.
-Also there is now a option to set a default wifi to connect for default.
+Also there is now an option to set a default wifi to connect for default.
 
 TODO: Don't store pwd in cleartext :P
