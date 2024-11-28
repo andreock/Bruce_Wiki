@@ -45,3 +45,8 @@ A sample env for the [esp32-s3-devkitc-1 board](https://docs.espressif.com/proje
 # What kind of files i need to put on the SD card?
 
 There is some file examples of what you can do [in here](https://github.com/pr3y/Bruce/tree/main/sd_files), including [evil portal templates](https://github.com/pr3y/Bruce/tree/main/sd_files/portals), [nfcs](https://github.com/pr3y/Bruce/tree/main/sd_files/nfc) and [infrared](https://github.com/pr3y/Bruce/tree/main/sd_files/infrared)
+
+# How do i customize Bruce?
+
+You can choose a startup gif or image other than Bruce's default by adding your image as 'boot.jpg' or 'boot.gif' on the root of the filesystems, you can also choose a startup sound if you have a file named 'boot.mp3' for it.
+Also its possible to render images and gifs on the Bruce itself via the LittleFS or SD Card manager
