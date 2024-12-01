@@ -5,8 +5,8 @@
 - **[M5Stack Mini Infrared Emitter & Receiver Unit](https://shop.m5stack.com/products/ir-unit)**: This module offers easier connectivity compared to other options.
 
 ### Unofficial Modules
-- **KY-005**: [Infrared Transmitter](https://arduinomodules.info/ky-005-infrared-transmitter-sensor-module/)  
-- **KY-022**: [Infrared Receiver](https://arduinomodules.info/ky-022-infrared-receiver-module/)  
+- **[KY-005](https://arduinomodules.info/ky-005-infrared-transmitter-sensor-module/)**: Infrared Transmitter  
+- **[KY-022](https://arduinomodules.info/ky-022-infrared-receiver-module/)**: Infrared Receiver  
   *Note: These modules may be available under different names and may require modifications for optimal range when used with 3.3V boards. See [source 1](https://www.reddit.com/r/AskElectronics/comments/183mhh6/increase_voltage_power_for_ir_led_powered_by_33v/) and [source 2](https://circuitdigest.com/forums/internet-things/how-interface-hx-53-ir-transmitter-infrared-sensor-module-esp32) for details.*
   
 - **[Elecrow Arduino Infrared Remote Control IOT Smart IR Module](https://www.elecrow.com/arduino-infrared-remote-control-iot-smart-ir-module.html)**: Functions well at 3.3V without requiring modifications.
