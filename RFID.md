@@ -1,34 +1,35 @@
-## RFID and NFC
+## RFID and NFC Overview
 
-**RFID** is a technology that uses electromagnetic fields to automatically identify and track tags attached to objects. These tags contain electronically stored information that can be read by an RFID reader. RFID is widely used in areas like inventory management, access control, and transportation systems.
+**RFID (Radio Frequency Identification)** is a technology that utilizes electromagnetic fields to automatically identify and track tags attached to objects. These tags store electronically encoded information that can be read by an RFID reader. RFID is commonly employed in various applications, including inventory management, access control, and transportation systems.
 
-**NFC**, on the other hand, is a subset of RFID technology that operates within a shorter range, typically within a few centimeters. NFC allows devices to establish communication by bringing them close together. It is commonly used for contactless payments, data sharing between devices, and smart access systems.
+**NFC (Near Field Communication)** is a subset of RFID technology that operates over shorter distances, typically within a few centimeters. NFC enables devices to communicate by bringing them close together, making it ideal for contactless payments, data sharing between devices, and smart access systems.
 
+## Types of RFID Tags: Writable vs. Clonable
 
-## Difference between RFID tags that can be written and cloned
+### Writable RFID Tags
+Writable RFID tags allow users to modify the data stored on the tag, facilitating dynamic information updates. However, these tags typically do not permit writing to **Block 0**, which usually contains manufacturer data or unique identifiers.
 
-RFID tags that can be **written** to allow users to modify the data stored on the tag, enabling dynamic information updates. However, these tags do not support writing to **block 0**, which often contains manufacturer data or unique identifiers.
+### Clonable RFID Tags
+Clonable RFID tags pose a security risk, as cloning involves creating a duplicate of the tag's information. This can lead to unauthorized access or fraudulent activities. Cloning often requires writing to **Block 0**, necessitating a special type of tag that supports this capability.
 
-Tags that can be **cloned** are a security concern. Cloning an RFID tag involves making a duplicate copy of the tag's information, which can be used maliciously for unauthorized access or fraudulent activities. To clone a tag, you typically need to write to **block 0**, which requires a special type of tag that supports this functionality.
+## Common Types of RFID and NFC Tags
 
+- **MIFARE Classic 1k/4k**: Operates at 13.56MHz and offers 1KB or 4KB of memory storage. Commonly used in access control systems, transportation, and loyalty programs. You can find clonable versions of these tags [here](https://pt.aliexpress.com/item/1005006787338686.html).
+- **NTAG Series**: Popular NFC tag types, such as NTAG213 and NTAG215, operate at 13.56MHz and are known for their compatibility with a wide range of NFC-enabled devices and applications. These tags support NDEF records that can be interpreted by smartphones.
+- **EM4100 and T5557**: RFID protocols operating at 125kHz, commonly used for low-frequency access control systems, identification badges, key fobs, asset tracking, and other proximity-based identification applications.
 
-## Common types of tags for RFID and NFC
+## Supported Modules
 
-- **MIFARE Classic 1k/4k**: A widely used RFID protocol that operates at 13.56MHz frequency and offers 1KB or 4KB of memory storage. It is commonly used in access control systems, transportation, and loyalty programs. You can find clonable version of those tags [here](https://pt.aliexpress.com/item/1005006787338686.html).
-- **NTAG Series**: NTAG tags, such as NTAG213 and NTAG215, are popular NFC tag types operating at 13.56MHz. They are known for their compatibility with a wide range of NFC-enabled devices and applications. Those tags support NDEF records that can be interpreted by smartphones.
-- **EM4100 and T5557**: RFID protocols operating at 125kHz frequency, commonly used for low-frequency access control systems, identification badges, key fobs, asset tracking, and other applications requiring proximity-based identification.
-
-
-## Supported modules
-
-- RFID 13.56MHz
-  - **M5Stack [RFID2](https://docs.m5stack.com/en/unit/rfid2) module** 
-  - **MFRC-522** - through [I2C](https://github.com/pr3y/Bruce/blob/main/media/connections/rc522_stick.jpg) (!! Select `M5 RFID2` in the config menu)
-  - **PN532** - through [I2C](https://github.com/pr3y/Bruce/blob/main/media/connections/pn532_i2c.jpg) or [SPI](https://github.com/pr3y/Bruce/blob/main/media/connections/pn532_spi.jpg) or [BLE](https://why.yuyeye.cc/post-images/1568433091524.jpg)
-- RFID 125kHz
+- **RFID 13.56MHz**
+  - **M5Stack [RFID2](https://docs.m5stack.com/en/unit/rfid2) module**
+  - **MFRC-522** - via [I2C](https://github.com/pr3y/Bruce/blob/main/media/connections/rc522_stick.jpg) (Select `M5 RFID2` in the config menu)
+  - **PN532** - via [I2C](https://github.com/pr3y/Bruce/blob/main/media/connections/pn532_i2c.jpg), [SPI](https://github.com/pr3y/Bruce/blob/main/media/connections/pn532_spi.jpg), or [BLE](https://why.yuyeye.cc/post-images/1568433091524.jpg)
+  
+- **RFID 125kHz**
   - **RDM6300** ([Connection Schema](https://github.com/pr3y/Bruce/pull/182#issuecomment-2287692412))
 
 ## Features
+
 ### RFID 13.56MHz
 - [x] Read
 - [x] Write
