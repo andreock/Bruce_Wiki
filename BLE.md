@@ -1,21 +1,21 @@
-## Disconnect BLE
+# Disconnect BLE
 If BLE is currently active, use this option to disconnect. No further explanation needed.
 
 ---
 
-## BLE Scan
+# BLE Scan
 Scan for nearby Bluetooth Low Energy (BLE) devices effortlessly.
 
 ---
 
-## BadBLE
+# BadBLE
 Simulate a keyboard to deploy DuckyScripts to paired devices. **Note:**  
 - The device must be previously paired for this feature to work.  
 - After disconnecting BLE, you need to restart the device to enable this functionality again.
 
 ---
 
-## Media Commands
+# Media Commands
 Control your smartphone’s media functions:  
 - Take screenshots  
 - Play/pause music  
@@ -23,7 +23,7 @@ Control your smartphone’s media functions:
 
 ---
 
-## NRF24 Jammer
+# NRF24 Jammer
 A powerful 2.4 GHz jammer using the NRF24 module. Options include:  
 - SD Card Sniffer mode  
 - Direct connection to the M5StickC  
@@ -38,23 +38,22 @@ A powerful 2.4 GHz jammer using the NRF24 module. Options include:
 
 ---
 
-## BLE Spam Features
+# BLE Spam Features
 
-### iOS Spams
+## iOS Spams
 - **[AppleJuice](https://github.com/ECTO-1A/AppleJuice):** iOS Bluetooth pairing spam.  
 - **[SourApple](https://github.com/RapierXbox/ESP32-Sour-Apple):** iOS Bluetooth crash exploit.
 
-### SwiftPair Spamming
+## SwiftPair Spamming
 Send Bluetooth device pairing notifications for:  
 - Windows (SwiftPair)  
 - Android devices  
- 
 
-### Android Spam
+## Android Spam
 Bluetooth pairing notification spamming for Android devices *(added in version 1.0.0)*.  
 
-### Samsung Devices
+## Samsung Devices
 Bluetooth notification spamming for Samsung devices *(added in version 1.0.0)*.  
 
-### Spam All
-A universal option to spam all supported devices simultaneously.  
+## Spam All
+A universal option to spam all supported devices simultaneously.
