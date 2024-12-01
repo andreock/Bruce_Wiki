@@ -1,46 +1,50 @@
-## Supported Modules  
+## Supported Modules
 
-- Built-in IR emitter found in most M5Stack boards  
-- [M5Stack Mini Infrared Emitter & Receiver Unit](https://shop.m5stack.com/products/ir-unit) (easier to connect than other modules)  
+### Built-In Options
+- **Infrared Emitter**: Most M5Stack boards come equipped with a built-in IR emitter.
+- **[M5Stack Mini Infrared Emitter & Receiver Unit](https://shop.m5stack.com/products/ir-unit)**: This module offers easier connectivity compared to other options.
 
-### Unofficial  
+### Unofficial Modules
+- **KY-005**: [Infrared Transmitter](https://arduinomodules.info/ky-005-infrared-transmitter-sensor-module/)  
+- **KY-022**: [Infrared Receiver](https://arduinomodules.info/ky-022-infrared-receiver-module/)  
+  *Note: These modules may be available under different names and may require modifications for optimal range when used with 3.3V boards. See [source 1](https://www.reddit.com/r/AskElectronics/comments/183mhh6/increase_voltage_power_for_ir_led_powered_by_33v/) and [source 2](https://circuitdigest.com/forums/internet-things/how-interface-hx-53-ir-transmitter-infrared-sensor-module-esp32) for details.*
+  
+- **[Elecrow Arduino Infrared Remote Control IOT Smart IR Module](https://www.elecrow.com/arduino-infrared-remote-control-iot-smart-ir-module.html)**: Functions well at 3.3V without requiring modifications.
+- **IR Hats for Raspberry Pi**: Designed for 3.3V operation; untested but expected to work.
+- **[LOLIN D1 IR Shield](https://www.wemos.cc/en/latest/d1_mini_shield/ir.html)**: Requires soldering for setup.
+- **[DIY Board](https://tasmota.github.io/docs/IR-Remote/#related-projects)**: Additional option for custom projects.
 
-- [KY-005](https://arduinomodules.info/ky-005-infrared-transmitter-sensor-module/) and [KY-022](https://arduinomodules.info/ky-022-infrared-receiver-module/) IR Transmitter/Receiver (also sold under other names).  
-  **NOTE:** May require modifications for better range on 3.3V boards ([source 1](https://www.reddit.com/r/AskElectronics/comments/183mhh6/increase_voltage_power_for_ir_led_powered_by_33v/), [source 2](https://circuitdigest.com/forums/internet-things/how-interface-hx-53-ir-transmitter-infrared-sensor-module-esp32).  
-- [Elecrow Arduino Infrared Remote Control IOT Smart IR Module](https://www.elecrow.com/arduino-infrared-remote-control-iot-smart-ir-module.html) (works fine at 3.3V, no modifications needed).  
-- IR Hats for Raspberry Pi (designed for 3.3V, untested but expected to work).  
-- [LOLIN D1 IR Shield](https://www.wemos.cc/en/latest/d1_mini_shield/ir.html) (requires soldering).  
-- [DIY Board](https://tasmota.github.io/docs/IR-Remote/#related-projects).  
+### Default Pinouts
+- **Tx**: Built-in LED  
+- **Rx**: GROVE_SCL  
 
-**Default Pinouts:**  
-`Tx = (built-in LED), Rx = GROVE_SCL`  
-
-**Wanted:** Range comparisons of different modules.  
-
----
-
-### Unsupported/Not Working  
-
-- YT-IRTM transmitter/receiver (serial connection, NEC protocol only).  
-- [Flirc](https://flirc.tv/) and other unbranded IR receivers/blasters with USB/USB-C ports, like [this one](https://www.walmart.com/ip/Universal-Remote-Smartphone-IR-Controller-Adapter-USB-C-Infrared-Blaster-Control-for-Android-Phone-All-in-One-Air-Conditioner-TV-DVD-STB-Black/5426981611?selectedSellerId=101177603).  
+### Request for Information
+- **Wanted**: Comparative analysis of the range performance of different IR modules.
 
 ---
 
-## Features  
+## Unsupported/Non-Functional Modules
 
-- [x] **TV-B-Gone:** Spams infrared signals to turn off screens.  
-- [x] **Custom IR:** Send custom IR codes from files in LittleFS or an SD card.  
-- [x] **IR Read:** Read and decode IR signals.  
+- **YT-IRTM Transmitter/Receiver**: Utilizes a serial connection and supports NEC protocol only.
+- **[Flirc](https://flirc.tv/)**: Other unbranded IR receivers and blasters with USB/USB-C connections, such as [this product](https://www.walmart.com/ip/Universal-Remote-Smartphone-IR-Controller-Adapter-USB-C-Infrared-Blaster-Control-for-Android-Phone-All-in-One-Air-Conditioner-TV-DVD-STB-Black/5426981611?selectedSellerId=101177603).
 
 ---
 
-## Replay Payloads Like Flipper!  
+## Features
 
-For example `.ir` files, visit: [Infrared Payloads](https://github.com/pr3y/Bruce/tree/main/sd_files/infrared).
+- [x] **TV-B-Gone**: Sends infrared signals to turn off various screens.
+- [x] **Custom IR**: Allows sending of custom IR codes from files stored in LittleFS or on an SD card.
+- [x] **IR Read**: Capable of reading and decoding incoming IR signals.
 
-### Methods to Transmit `.ir` Files  
+---
 
-1. **Via the "Custom IR" App:** Select commands individually through the "IR" menu.  
-2. **Via SDCard/LittleFS File Manager:** Found under the "Others" menu (spams all commands).  
-3. **Via the WebUI:** Click the [antenna button](https://github.com/pr3y/Bruce/pull/124) next to the file (spams all commands).  
-4. **Via Serial Command:** Example: `ir tx_from_file AC_LG_SX122CL_off.ir`. For more details, see the [Serial Command Guide](https://github.com/pr3y/Bruce/wiki/Serial) (spams all commands).  
+## Replay Payloads Like Flipper!
+
+To access `.ir` files, visit: [Infrared Payloads](https://github.com/pr3y/Bruce/tree/main/sd_files/infrared).
+
+### Methods for Transmitting `.ir` Files
+
+1. **Custom IR App**: Select commands individually from the "IR" menu.
+2. **SDCard/LittleFS File Manager**: Access under the "Others" menu (sends all commands).
+3. **WebUI**: Click the [antenna button](https://github.com/pr3y/Bruce/pull/124) next to the file (sends all commands).
+4. **Serial Command**: For example, use `ir tx_from_file AC_LG_SX122CL_off.ir`. For further details, refer to the [Serial Command Guide](https://github.com/pr3y/Bruce/wiki/Serial) (sends all commands).
