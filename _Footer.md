@@ -1,1 +1,1 @@
-🦈 Bruce - Predatory Firmware
+Can anyone edit this page?
