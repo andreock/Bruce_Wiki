@@ -1,7 +1,6 @@
 # VS Code
 You can open the project folder on Visual Studio Code with PlatformIO extension and click on "PlatformIO: Build" on the bottom.
-After compiling the project, you need to merge the bootloader, partitions and the actual firmware on a single one, for that you can run the shell scripts "build.sh" or "build.bat", which will use esptool.py to output the binaries.
-You also need to run the "deauth_setup" to be able to compile.
+After compiling the project, you need to merge the bootloader, partitions and the actual firmware on a single one, for that you can run the PlatformIO Custom task named "build-firmware" to output the single combined binary.
 With this you will have 5 .bin files on the project folder, with they being the build for M5Cardputer, M5StickC Plus 1.1, M5StickC Plus 2, M5core and M5Core2. 
 
 ## LINUX BUILD
@@ -9,7 +8,6 @@ Requirements
 ```sh
 sudo apt update
 sudo apt install python3-pip git
-pip3 install esptool --user
 pip3 install platformio
 export PATH=$PATH:~/.local/bin
 source ~/.bashrc
@@ -24,31 +22,16 @@ sudo dnf update
 sudo dnf install python3-pip git
 ```
 
-After running the first time, a compilation error will occur (`multiple definition of ieee80211_raw_frame_sanity_check`).
-```sh
-pio run --target clean
-pio run -e m5stack-cardputer
-pio run -e m5stack-cplus2
-pio run -e m5stack-cplus1_1 
-
-```
-
-To bypass the error we need to run only once 
-```sh
-bash deauth_setup.sh
-``` 
-
 Step by Step to build the project
 
 ```sh
-bash clean.sh
 pio run --target clean
 pio run -e m5stack-cardputer
 pio run -e m5stack-cplus2
 pio run -e m5stack-cplus1_1 
 # or pio run to all builds
 # pio run
-bash build.sh
+pio run -e m5stack-cardputer -t build-firmware
 ```
 
 # Windows build
@@ -62,12 +45,7 @@ bash build.sh
 * A little Menu will appear in the Search bar (up on screen), select your device "env"
 * Now click in the :heavy_check_mark: Icon in the Status Bar (beside the cute little House), it will start building your project
 * if you want to upload directly, you can do it clicking in the "->" arrow to upload to your device
-
-At this point you must have Pythons installed, probably PIP is installed too, if not, install it, because now its time to install Esptool
-* Open the Bruce folder with Windows Explorer
-* Click in the address bar, as if to edit it, delete all, type `cmd` and hit Enter, it´ll open the command prompt (windows terminal?) at the project folder
-* install esptool `pip install esptool`
-* now run "build.bat" and it will merge the bin files into one, so you can upload to your device with `esptool --port COMx write_flash 0x0 Bruce3_<yourboard>.bin` or `python -m esptool --port COMx write_flash 0x0 Bruce3_<yourboard>.bin`
+* If you want to output a binary you can flash, use the "build-firmware" Custom task in the PlatformIO Extension Sidebar Menu named "project tasks"
 
 
 # Github
