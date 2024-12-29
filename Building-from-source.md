@@ -32,6 +32,8 @@ pio run -e m5stack-cplus1_1
 # or pio run to all builds
 # pio run
 pio run -e m5stack-cardputer -t build-firmware
+pio run -e m5stack-cplus2 -t build-firmware
+pio run -e m5stack-cplus1_1 -t build-firmware
 ```
 
 # Windows build
