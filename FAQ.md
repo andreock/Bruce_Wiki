@@ -23,6 +23,7 @@ RF signals propagate in all directions and does not require a line of sight, but
    - use another device to check and compare the signals. e.g. [rtl_433](https://github.com/merbanan/rtl_433) for RF, [Tasmota](https://tasmota.github.io/docs/Tasmota-IR/) or a [Broadlink RM4 Pro](https://www.ibroadlink.com/productinfo/762672.html) for both IR and RF.
  - most RF modules only supports the 433MHz frequency with ASK/OOK modulation. Check if your `.sub` file or source signal is compatible.
  - check the [serial log](https://github.com/pr3y/Bruce/wiki/Serial) for errors, some signals may [fail to decode](https://github.com/pr3y/Bruce/issues/216).
+ - even if the signal decodes properly, some devices may use [rolling codes](https://en.m.wikipedia.org/wiki/Rolling_code) or other security mechanism to prevent replay attacks.
 
 
 # Feature X is missing in my device?
@@ -48,5 +49,5 @@ There is some file examples of what you can do [in here](https://github.com/pr3y
 
 # How do i customize Bruce?
 
-You can choose a startup gif or image other than Bruce's default by adding your image as 'boot.jpg' or 'boot.gif' on the root of the filesystems, you can also choose a startup sound if you have a file named 'boot.mp3' for it.
-Also its possible to render images and gifs on the Bruce itself via the LittleFS or SD Card manager
+You can choose a startup image other than Bruce's default by adding your image as 'boot.jpg' on the root of the filesystems, you can also choose a startup sound if you have a file named 'boot.mp3' for it.
+Also its possible to render images on the Bruce itself via the LittleFS or SD Card manager
