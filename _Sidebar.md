@@ -32,7 +32,7 @@
   * [Replay Payloads Like Flipper](https://github.com/pr3y/Bruce/wiki/IR#replay-payloads-like-flipper)
 * [RF](https://github.com/pr3y/Bruce/wiki/RF)
   * [Supported Modules](https://github.com/pr3y/Bruce/wiki/RF#supported-modules)
-    * [CC1101](https://github.com/pr3y/Bruce/wiki/CC1101}
+    * [CC1101](https://github.com/pr3y/Bruce/wiki/CC1101)
     * [Official Modules](https://github.com/pr3y/Bruce/wiki/RF#official-modules)
     * [Unofficial Modules](https://github.com/pr3y/Bruce/wiki/RF#unofficial-modules)
   * [Unsupported/Not Working](https://github.com/pr3y/Bruce/wiki/RF#unsupportednot-working)
