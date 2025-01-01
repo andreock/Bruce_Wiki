@@ -1,1 +1,1 @@
-Can anyone edit this page? нет
+Can anyone edit this page? нет =)
