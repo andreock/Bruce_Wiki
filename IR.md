@@ -41,6 +41,7 @@
 ## Replay Payloads Like Flipper!
 
 To access `.ir` files, visit: [Infrared Payloads](https://github.com/pr3y/Bruce/tree/main/sd_files/infrared).
+
 https://github.com/Lucaslhm/Flipper-IRDB also has so many payloads you can use
 
 ### Methods for Transmitting `.ir` Files
