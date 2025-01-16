@@ -68,3 +68,4 @@
   * [Openhaystack](https://github.com/pr3y/Bruce/wiki/Others#openhaystack)
   * [Interpreter](https://github.com/pr3y/Bruce/wiki/Interpreter)
 * [FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
+*CHECK PREMISION
