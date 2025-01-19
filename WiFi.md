@@ -91,6 +91,11 @@ Spams deauth frames targetted to this particular device
 ### ARP Poisoning
 Sends fale ARP responses to all hosts and to the gateway with random MAC addresses. It can possibly cause CAOS in the network, as all devices won't find the gateway to communicate.
 
+## TCP Client
+Allows the ESP32 to connect to a remote server as a client over TCP. You can configure the target server's IP address and port, enabling data transmission to and from the server.
+
+## TCP Listener
+Listen for incoming TCP connections on a specified port. It waits for client connections, allowing the device to act as a server and handle communication with connected clients.
 
 ## Wireguard Tunneling
 To be able to connect to a wireguard tunnel with your cardputer easily, you need to have your .conf file and place on the SD card root directory called "wg.conf"
