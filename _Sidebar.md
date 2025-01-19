@@ -68,6 +68,7 @@
   * [BadUSB](https://github.com/pr3y/Bruce/wiki/Others#badusb)
   * [Led Control](https://github.com/pr3y/Bruce/wiki/Others#led-control)
   * [Openhaystack](https://github.com/pr3y/Bruce/wiki/Others#openhaystack)
+  * [iButton](https://github.com/pr3y/Bruce/wiki/Others#ibutton)
   * [Interpreter](https://github.com/pr3y/Bruce/wiki/Interpreter)
 * [FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
 * (I sent a message on IG regarding this bug ;))
