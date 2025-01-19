@@ -42,5 +42,8 @@ To create pub.key file you should run this in bash:
 base64 -d <<< "your_base64_public_key"|tee pub.key
 ```
 
+## iButton
+![How to](https://raw.githubusercontent.com/pr3y/Bruce/refs/heads/main/media/connections/ibutton_sticks.jpg)
+
 ## Interpreter
 Head over to the [Interpreter Section](https://github.com/pr3y/Bruce/wiki/Interpreter).
