@@ -49,5 +49,5 @@ There is some file examples of what you can do [in here](https://github.com/pr3y
 
 # How do i customize Bruce?
 
-You can choose a startup image other than Bruce's default by adding your image as 'boot.jpg' on the root of the filesystems, you can also choose a startup sound if you have a file named 'boot.mp3' for it.
-Also its possible to render images on the Bruce itself via the LittleFS or SD Card manager
+You can choose a startup image other than Bruce's default by adding your image as 'boot.jpg' or 'boot.gif' on the root of the filesystems, you can also choose a startup sound if you have a file named 'boot.mp3' for it.
+Also its possible to render images on the Bruce itself via the LittleFS or SD Card manager.
