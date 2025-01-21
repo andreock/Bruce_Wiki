@@ -71,4 +71,4 @@
   * [iButton](https://github.com/pr3y/Bruce/wiki/Others#ibutton)
   * [Interpreter](https://github.com/pr3y/Bruce/wiki/Interpreter)
 * [FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
-* (I sent a message on IG regarding this bug ;))
+* (This is not a bug, is a permission feature for repo because the community was helping the wiki but thanks "bug hunter" ;))
