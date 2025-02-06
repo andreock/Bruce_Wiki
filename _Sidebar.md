@@ -69,5 +69,6 @@
   * [Led Control](https://github.com/pr3y/Bruce/wiki/Others#led-control)
   * [Openhaystack](https://github.com/pr3y/Bruce/wiki/Others#openhaystack)
   * [iButton](https://github.com/pr3y/Bruce/wiki/Others#ibutton)
+  * [Clicker](https://github.com/pr3y/Bruce/wiki/Others#clicker)
   * [Interpreter](https://github.com/pr3y/Bruce/wiki/Interpreter)
 * [FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
