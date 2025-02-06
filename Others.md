@@ -45,5 +45,8 @@ base64 -d <<< "your_base64_public_key"|tee pub.key
 ## iButton
 ![How to](https://raw.githubusercontent.com/pr3y/Bruce/refs/heads/main/media/connections/ibutton_sticks.jpg)
 
+## Clicker
+USB Mouse clicker that you can control the delay between the clicks, this is usually used to cheat in some clicker games.
+
 ## Interpreter
 Head over to the [Interpreter Section](https://github.com/pr3y/Bruce/wiki/Interpreter).
