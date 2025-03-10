@@ -1,7 +1,7 @@
-## SD Card Mngr
+## SD
 Create Folders or Rename, Copy (to LittleFS also) and Delete files.
 
-## LittleFS Mngr
+## LittleFS
 Delete, Copy, Rename or Read files from LittleFS.
 
 ## WebUI
