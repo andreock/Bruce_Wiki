@@ -1,24 +1,46 @@
 # WiFi Atks
 
-## Beacon Spam
+## Connect Wifi
+Connects into a chosen network, it will allow you to use **TCP Listener**, **ARP Poisoning**, **Station Deauth**, **TelNet**, **SSH** and **Scan Hosts** functions.
 
-## Target Atk
-Scans for a WiFi AP to either get more information of it (MAC and channel), Send Deauth frames, Clone AP name and make a Evil Portal or Deauth + Clone.
+## WiFi AP
+Launches an Access point, so you can connect up to 4 guests to share information between each other.
 
-## Wardriving
-Wardriving in Bruce is possible [after this PR](https://github.com/pr3y/Bruce/pull/100), so if you have a GPS module from M5stack you can start wardriving and check for the .csv that can be uploaded to Wigle also!
+## Wifi Atks
+### Target Atks
+Scans for a WiFi AP to either: 
+* get more information of it (MAC and channel), 
+* Send Deauth frames, 
+* Clone AP name and make a Evil Portal ,
+* Deauth + Clone
+* Deauth + Clone and verify, in case you are trying to get password of a WiFi network.
 
-## TelNet
-Connect to TelNet servers and execute remote commands.
+### Beacon Spam
+Spams SSID frames in the air.
 
-## SSH
-Connect to SSH servers and execute remote commands.
+#### Funny SSID
+Spams a list of funny hardcoded SSID names.
 
-## RAW Sniffer
-Saves .pcap to SD card with raw monitoring, you can also select for it to save only EAPOL/HandShakes and stop spamming deauth packets to detected beacons previously detected.
+#### Rick Roll
+Spams Rick Roll lyrics in SSID names.
 
-## DPWO-ESP32
-Searches for default credentials for some router operators [more info here](https://github.com/caioluders/DPWO)
+#### Random SSID
+Spams random SSIDs, composed by random numbers and letters.
+
+#### Custom SSID
+Spams a list of SSIDs writen in a **.txt** file. There must be 
+* One SSID per line 
+* Up to 32 characters per SSID
+* as many SSID you want
+```txt
+My SSID
+Your SSID
+His SSID
+etc...
+```
+
+### Deauth Flood
+Foods Deauth packets to all Access Points it can find.
 
 ## Evil Portal
 In EVIL Portal mode, BRUCE reads the keyboard input for the SSID and activates a open WiFi, with DNS, DHCP and Web servers activated. 
@@ -73,11 +95,29 @@ The `EvilPortal` system now supports the ability to define an Access Point (AP) 
 - Ensure the `<!-- AP="..." -->` tag is in the **very first line** of the file.  
 - The feature does not affect the functionality of other HTML content.
 
+## TCP Listener
+Listen for incoming TCP connections on a specified port. It waits for client connections, allowing the device to act as a server and handle communication with connected clients.
+
+## TCP Client
+Allows the ESP32 to connect to a remote server as a client over TCP. You can configure the target server's IP address and port, enabling data transmission to and from the server.
+
+## TelNet
+Connect to TelNet servers and execute remote commands.
+
+## SSH
+Connect to SSH servers and execute remote commands.
+
+## DPWO-ESP32
+Searches for default credentials for some router operators [more info here](https://github.com/caioluders/DPWO)
+
+## RAW Sniffer
+Saves .pcap to SD card with raw monitoring, you can also select for it to save only EAPOL/HandShakes and stop spamming deauth packets to detected beacons previously detected.
+
 ## Scan Hosts
-Does a ARP scan on current network based on the mask (equivalent to arp -a), after that it will list every host online, then you can select some host to have a TCP port scan on selected ports (20, 21, 22, 23, 25, 80, 137, 139, 443, 3389, 8080, 8443, 9090), as seen in "ports" variable on scan_hosts.cpp and let you choose a target host attack such as:
+Does a ARP scan on current network based on the mask (equivalent to arp -a), after that it will list every host online, then you can select some host to have a TCP port scan on selected ports (20, 21, 22, 23, 25, 80, 137, 139, 443, 3389, 8080, 8443, 9090 and more), as seen in "ports" variable on scan_hosts.cpp and let you choose a target host attack such as:
 
 ## Host Info
-Discover open ports (20, 21, 22, 23, 25, 80, 137, 139, 443, 3389, 8080, 8443, 9090) on the Host
+Discover open ports (20, 21, 22, 23, 25, 80, 137, 139, 443, 3389, 8080, 8443, 9090 and more) on the Host
 
 ### SSH Connect
 Tries to connect into the Host using SSH.
@@ -91,12 +131,6 @@ Spams deauth frames targetted to this particular device
 ### ARP Poisoning
 Sends fale ARP responses to all hosts and to the gateway with random MAC addresses. It can possibly cause CAOS in the network, as all devices won't find the gateway to communicate.
 
-## TCP Client
-Allows the ESP32 to connect to a remote server as a client over TCP. You can configure the target server's IP address and port, enabling data transmission to and from the server.
-
-## TCP Listener
-Listen for incoming TCP connections on a specified port. It waits for client connections, allowing the device to act as a server and handle communication with connected clients.
-
 ## Wireguard Tunneling
 To be able to connect to a wireguard tunnel with your cardputer easily, you need to have your .conf file and place on the SD card root directory called "wg.conf"
 If you don't know how to generate a .conf file for wireguard [read here](https://www.wireguard.com/quickstart/) 
@@ -106,3 +140,10 @@ This feature does a lot of things at the same time, such as:
 - Pwngrid spam
 - Deauth nearby WiFi networks in different channels
 - Collect and save HandShakes (EAPOL)
+
+## Config
+### Add Evil Wifi
+Adds an SSID into the list so you can choose it with ease when opening an Evil Portal
+
+### Remove Evil Wifi
+Deletes a previously added SSID.
