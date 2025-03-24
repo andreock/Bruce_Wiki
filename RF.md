@@ -1,64 +1,63 @@
-# RF
-## Scan/Copy
+# Scan/Copy
 Scan and copy RF signals in ASK/OOK modulation. It will start with the default frequency (433Mhz, common for M5 RF433R and FS1000A modules).
-### Mode
+## Mode
 **Decode**: tries to decode the signal with RCSwitch decoder
 **RAW**: Will display RAW signals obtained from RCSwitch library.
 
-### Filter
+## Filter
 **Code**: On Decode mode, it will only display decoded signals. more reliable in noisy environments
 **All**: will capture Decoded and RAW signals
 
-### Replay
+## Replay
 Send the last signal captured by Bruce.
 
-### Save
+## Save
 Stores the signal into ./BruceRF of your SD Card or LittleFS**
 
-### CC1101 only menu
-#### Range
+## CC1101 only menu
+### Range
 Choose the frequency to scan or a range to detect the frequency
 
-#### Threshold
+### Threshold
 Choose the sensibility of the scanner. 
 -60 to a more strict error frequency (more precise)
 -80 to a more broad frequency (greater error, less precise)
 
-## Record Raw
+# Record Raw
 Records RAW signal using ESP32 RMT driver, displaying the raw signal obtained in a few seconds of capture.
 The recording will start once it detects a minimum signal on the input.
 If using CC1101, you can choose the frequency you want to record.
 In this function you can Save, and replay signals.
 
-## Custom SubGhz (limited compatibility)
+# Custom SubGhz (limited compatibility)
 Transmits signals stored in **.sub** files, they can be the ones saved by Bruce in the BruceRF folder or others downloaded from internet.
 
-## Spectrum Analysis
+# Spectrum Analysis
 Displays waveform signals if RF frequencies are detected.
 
-## Squarewave Spectrum
+# Squarewave Spectrum
 When signals are detected, it displays a squarewave based on the timings of the signal.
 
-## Jammer Full
+# Jammer Full
 Starts a full square signal on the output, jamming the RF spectrum in the 433Mhz area, or in the **RF Frequecy** set in the Config Menu (if using CC1101)
 
-## Jammer Intermittent
+# Jammer Intermittent
 Starts a PWM signal on the output, jamming the signal, not harming the transmitter, if listening to the frequency with a radio, yo´'ll be able to hear a "weeeoooooiiiiiioooooeeee" sound
 
-## Config
-### RF TX Pin and RF RX Pin
+# Config
+## RF TX Pin and RF RX Pin
 If using M5Stack, FS1000A or other single pin module to transmit the signal, here is where you can choose the pin
 
-### RF Module
-#### M5 RF433T/R 
+## RF Module
+### M5 RF433T/R 
 M5 RF433T/R modules or unofficial modules.
-#### CC1101
+### CC1101
 If you are using a StickCPlus (1.1 or 2), you will be presented to two options of CC1101
-##### CC1101 (legacy)
+
+#### CC1101 (legacy)
 This setup is designed to use only the CC1101 in the bus, using [THIS setup](https://github.com/pr3y/Bruce/blob/main/media/connections/cc1101_stick.jpg)
 
-
-##### CC1101 (Shared SPI)
+#### CC1101 (Shared SPI)
 This setup is designed to share the SPI bus with the SD Card, but in this case you ned to add a transistor into the circuit, using [THIS Setup](https://github.com/pr3y/Bruce/blob/main/media/connections/cc1101_stick_SDCard.jpg)
 
 
