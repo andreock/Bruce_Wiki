@@ -81,3 +81,5 @@ To use it, create a JSON file named `Theme.json` with the following structure:
 ```
 
 And you will also need all of those pngs on the root of the filesystem (SD or LittleFS) for you device with a compatible resolution for it to work.
+
+To look for community themes, for now you can look at this thread in Bruce discord: https://discord.com/channels/1264994142769909854/1351879900037906462
