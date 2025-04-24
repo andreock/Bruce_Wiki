@@ -54,7 +54,8 @@ Also its possible to render images on the Bruce itself via the LittleFS or SD Ca
 
 # Themes
 Now its possible to have other themes for the menu functionalities!
-TTo use it, create a JSON file named `Theme.json` with the following structure:
+
+To use it, create a JSON file named `Theme.json` with the following structure:
 ```json
 {
   "priColor": "ffff",
