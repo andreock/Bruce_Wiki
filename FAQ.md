@@ -51,3 +51,32 @@ There is some file examples of what you can do [in here](https://github.com/pr3y
 
 You can choose a startup image other than Bruce's default by adding your image as 'boot.jpg' or 'boot.gif' on the root of the filesystems, you can also choose a startup sound if you have a file named 'boot.wav' for it.
 Also its possible to render images on the Bruce itself via the LittleFS or SD Card manager.
+
+# Themes
+Now its possible to have other themes for the menu functionalities!
+TTo use it, create a JSON file named `Theme.json` with the following structure:
+```json
+{
+  "priColor": "ffff",
+  "secColor": "ffff",
+  "bgColor": "0000",
+  "border": 0,
+  "label": 1,
+  "wifi": "wifi.png",
+  "ble": "ble.png",
+  "rf": "rf.png",
+  "rfid": "rfid.png",
+  "ir": "ir.png",
+  "fm": "fm.png",
+  "files": "files.png",
+  "gps": "gps.png",
+  "nrf": "nrf.png",
+  "interpreter": "interpreter.png",
+  "others": "others.png",
+  "clock": "clock.png",
+  "connect": "connect.png",
+  "config": "config.png"
+}
+```
+
+And you will also need all of those pngs on the root of the filesystem (SD or LittleFS) for you device with a compatible resolution for it to work.
