@@ -126,10 +126,10 @@ Tries to connect into the Host using SSH.
 Spams deauth frames targetted to this particular device
 
 ### ARP Spoofing
-- Sends fake ARP Resonses to the host and to the Gateway, provoking communication interruption. this is the fist step of a Man-In-The-Middle attack using the 2nd OSI layer vulnerability.
+Sends fake ARP responses to the host and to the Gateway, provoking communication interruption. this is the fist step of a Man-In-The-Middle attack using the 2nd OSI layer vulnerability.
 
 ### ARP Poisoning
-Sends fale ARP responses to all hosts and to the gateway with random MAC addresses. It can possibly cause CAOS in the network, as all devices won't find the gateway to communicate.
+Sends fake ARP responses to all hosts and to the gateway with random MAC addresses. It can possibly cause CAOS in the network, as all devices won't find the gateway to communicate.
 
 ## Wireguard Tunneling
 To be able to connect to a wireguard tunnel with your cardputer easily, you need to have your .conf file and place on the SD card root directory called "wg.conf"
