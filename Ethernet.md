@@ -15,9 +15,9 @@ Tries to connect into the Host using SSH.
 ## ARP Poisoning
 Sends fale ARP responses to all hosts and to the gateway with random MAC addresses. It can possibly cause CAOS in the network, as all devices won't find the gateway to communicate.
 
-### Wiring
+## Wiring
 
-#### M5Stick
+### M5Stick
 
 - INT_PIN=25
 - SS_PIN=26
@@ -25,7 +25,7 @@ Sends fale ARP responses to all hosts and to the gateway with random MAC address
 - SCK_PIN=0
 - MISO_PIN=33
 
-## Cardputer
+### Cardputer
 
 This requires a [microSD sniffer](https://www.sparkfun.com/products/9419) (shared with the SD card) and some soldering skills.
 
@@ -40,7 +40,7 @@ This requires a [microSD sniffer](https://www.sparkfun.com/products/9419) (share
 | Mosi   | CMD | |
 | Miso   | DAT0 | |
 
-#### CYD
+### CYD
 
 Works with the [microSD sniffer](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/blob/main/ADDONS.md#sd-card-sniffer):
 
@@ -48,7 +48,7 @@ Works with the [microSD sniffer](https://github.com/witnessmenow/ESP32-Cheap-Yel
 - SS PIN = 27(CYD)
 - SS PIN = 21(Phantom)
 
-#### Lilygo T-deck/T-display-s3
+### Lilygo T-deck/T-display-s3
 
 Works with the [microSD sniffer](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/blob/main/ADDONS.md#sd-card-sniffer):
 
@@ -58,14 +58,14 @@ Works with the [microSD sniffer](https://github.com/witnessmenow/ESP32-Cheap-Yel
 
 These pins comes from Qwiic connector(RX and TX pin) from the side of the board
 
-#### Lilygo T-display-ttgo
+### Lilygo T-display-ttgo
 
 Works with the [microSD sniffer](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/blob/main/ADDONS.md#sd-card-sniffer):
 
 - INT PIN = 37
 - SS PIN = 38
 
-#### Lilygo T-embed-CC1101
+### Lilygo T-embed-CC1101
 
 Works with the [microSD sniffer](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/blob/main/ADDONS.md#sd-card-sniffer):
 
